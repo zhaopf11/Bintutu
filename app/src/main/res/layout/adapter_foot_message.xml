@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/ui_margin_20">
+
+        <CheckBox
+            android:id="@+id/checkbox_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_checkbox"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_corner_bg"
+            android:paddingTop="@dimen/ui_margin_20"
+            android:paddingBottom="@dimen/navigation_bar_edit_margin"
+            android:paddingLeft="@dimen/ui_margin_20"
+            android:paddingRight="@dimen/ui_margin_20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/WrapWrap"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_30"
+                    android:text="程小姐的足型数据" />
+
+                <TextView
+                    android:id="@+id/txt_num"
+                    style="@style/adapter_foot_message_name.info"
+                    android:visibility="gone"
+                    android:text="201701010011" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_sex"
+                        style="@style/adapter_foot_message_name.info"
+                        android:text="性别： 女" />
+
+                    <TextView
+                        android:id="@+id/txt_shoesize"
+                        style="@style/adapter_foot_message_name.info"
+                        android:layout_marginLeft="@dimen/ui_margin_20"
+                        android:text="鞋码： 42" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/img_footmessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/foot2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginLeft="@dimen/ui_30"
+                    android:src="@drawable/into" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

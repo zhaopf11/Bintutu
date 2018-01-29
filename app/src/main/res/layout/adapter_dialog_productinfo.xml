@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:padding="@dimen/navigation_bar_edit_margin">
+
+    <TextView
+        android:id="@+id/text_infotitle"
+        android:layout_width="@dimen/ui_250"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_30"
+        android:textColor="@color/gray3"
+        android:text="颜色分类"/>
+
+
+    <TextView
+        android:id="@+id/text_productinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_24"
+        android:text="白色黑色"
+        />
+
+</LinearLayout>

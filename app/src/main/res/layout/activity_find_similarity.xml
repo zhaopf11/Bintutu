@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_bg" />
+
+    <include layout="@layout/adapter_collection_product" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:paddingTop="@dimen/ui_margin_20"
+        android:paddingBottom="@dimen/ui_margin_20"
+        android:gravity="center"
+        android:text="相似商品"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/font_30"/>
+    <GridView
+        android:id="@+id/grid_similarity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:scrollbars="none">
+
+    </GridView>
+
+
+
+
+</LinearLayout>  

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="@color/navigation_bar_bg" />  //背景色
+
+    <stroke
+        android:width="1px"
+        android:color="#d7d7d7"  />  //边框颜色
+
+    <padding
+        android:bottom="1px"
+        android:left="1px"
+        android:right="1px"
+        android:top="1px" />
+
+</shape>

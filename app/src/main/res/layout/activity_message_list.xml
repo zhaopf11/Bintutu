@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhurui.bunnymall.home.activity.MessageListActivity"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+   >
+    <include layout="@layout/title_noright_common" />
+
+    <LinearLayout
+        android:id="@+id/lin_logistical"
+        style="@style/home_message_lin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logistical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/home_store_name"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_30"
+                    android:text="交易物流消息"/>
+
+                <TextView
+                    android:id="@+id/text_logisticaltime"
+                    style="@style/home_store_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_logisticalmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_24"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:text="订单已签收！您买的鞋子"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_notice"
+        style="@style/home_message_lin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_notice"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/home_store_name"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_30"
+                    android:text="通知消息"/>
+
+                <TextView
+                    android:id="@+id/text_noticetime"
+                    style="@style/home_store_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_noticemessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_24"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:text="注册即送满减优惠券"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</LinearLayout>

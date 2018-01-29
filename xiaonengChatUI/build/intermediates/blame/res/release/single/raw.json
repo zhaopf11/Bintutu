@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\myWork\\BintutuCustomer\\xiaonengChatUI\\build\\intermediates\\res\\merged\\release\\raw\\xnemoji",
+        "source": "E:\\myWork\\BintutuCustomer\\xiaonengChatUI\\src\\main\\res\\raw\\xnemoji"
+    },
+    {
+        "merged": "E:\\myWork\\BintutuCustomer\\xiaonengChatUI\\build\\intermediates\\res\\merged\\release\\raw\\xnsdkconfig.xml",
+        "source": "E:\\myWork\\BintutuCustomer\\xiaonengChatUI\\src\\main\\res\\raw\\xnsdkconfig.xml"
+    },
+    {
+        "merged": "E:\\myWork\\BintutuCustomer\\xiaonengChatUI\\build\\intermediates\\res\\merged\\release\\raw\\emoji",
+        "source": "E:\\myWork\\BintutuCustomer\\xiaonengChatUI\\src\\main\\res\\raw\\emoji"
+    }
+]

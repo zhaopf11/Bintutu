@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg">
+
+        <LinearLayout
+            android:id="@+id/lin_colligate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn_colligate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ui_70"
+                android:drawablePadding="@dimen/ui_5"
+                android:drawableRight="@drawable/down_checked"
+                android:gravity="center"
+                android:text="综合"
+                android:textSize="@dimen/font_26"
+                android:textColor="@color/color_d2ba91" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_salesvolume"
+            style="@style/dropdown_tab_style"
+            android:visibility="gone"
+            android:text="@string/sales_volume" />
+
+        <LinearLayout
+            android:id="@+id/lin_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ui_70"
+                android:layout_marginRight="@dimen/ui_5"
+                android:gravity="center"
+                android:text="价格"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_26"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/up_deep_normal" />
+
+                <ImageView
+                    android:id="@+id/img_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_width_3"
+                    android:src="@drawable/down_deep_normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_screen"
+            style="@style/dropdown_tab_style"
+            android:text="筛选" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_bg" />
+
+
+
+</LinearLayout>

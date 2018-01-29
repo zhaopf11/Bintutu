@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+   >
+
+    <LinearLayout
+        android:id="@+id/lin_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:gravity="center_vertical"
+        android:background="@color/navigation_bar_bg"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        >
+        <ImageView
+            android:id="@+id/img_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checkbox_normal"
+            android:padding="@dimen/ui_30"
+            android:layout_marginRight="@dimen/navigation_bar_margin"/>
+
+        <TextView
+            android:id="@+id/checkbox_group"
+            android:layout_height="@dimen/ui_70"
+            android:layout_width="match_parent"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_26"
+            android:text="爱美Go定制"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:gravity="center_vertical"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="1px"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <ImageView
+            android:id="@+id/checkbox_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checkbox_normal"
+            android:padding="@dimen/ui_30"
+            android:layout_marginRight="@dimen/navigation_bar_margin"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="商品ID:  "
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_26" />
+
+            <TextView
+                android:id="@+id/productId"
+                style="@style/WrapWrap"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="品牌:  "
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_26" />
+
+            <TextView
+                android:id="@+id/product_brand"
+                style="@style/WrapWrap"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_26" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:layout_marginTop="1px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/checkbox_child1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/checkbox_normal"
+            android:padding="@dimen/ui_margin_20"
+            android:layout_marginRight="@dimen/navigation_bar_margin"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/ui_250"
+            android:layout_height="@dimen/ui_250"
+            android:layout_marginLeft="@dimen/ui_30"
+            android:layout_marginTop="@dimen/ui_margin_20"
+            android:layout_marginBottom="@dimen/ui_margin_20"
+            android:src="@drawable/list_normal"
+            android:layout_marginRight="@dimen/ui_margin_20"
+            />
+
+        <LinearLayout
+            android:id="@+id/lin_produce_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rel_colorsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_40">
+
+                <TextView
+                    android:id="@+id/text_productintroduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_30"
+                    android:text="明星同款一字扣简约女士凉鞋舒适清爽"
+                    android:layout_marginRight="@dimen/ui_30"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/text_count"
+                        style="@style/adapter_cart_price"
+                        android:layout_alignParentRight="true"
+                        android:text="x1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:layout_marginBottom="@dimen/ui_40">
+
+                <TextView
+                    android:id="@+id/text_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24"
+                    android:text="¥199.00"/>
+
+                <TextView
+                    android:id="@+id/text_fare"
+                    style="@style/adapter_cart_price"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24"
+                    android:layout_alignParentRight="true"
+                    android:text="运费: 10元"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+            <!--<include android:id="@+id/lin_amount" layout="@layout/view_amount" android:visibility="visible"/>-->
+
+        <com.zhurui.bunnymall.viewutils.AmountView
+            android:id="@+id/amountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/ui_70"
+
+          >
+
+        </com.zhurui.bunnymall.viewutils.AmountView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_foottype"
+        style="@style/MatchWrap"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ui_30"
+        android:background="@color/navigation_bar_bg">
+
+        <include
+            layout="@layout/include_cart_check_attr"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

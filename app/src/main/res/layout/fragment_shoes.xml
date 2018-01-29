@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <me.shihao.library.XRadioGroup
+        android:id="@+id/radiogroup_shoes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radio_shoes_interset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/radiobutton_bg"
+                android:button="@null"
+                android:checked="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/shoes_interset"
+                android:textColor="@drawable/radiobutton_textcolorchange"
+                android:textSize="@dimen/font_30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radio_craftsman_interview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/radiobutton_bg"
+                android:button="@null"
+                android:text="@string/craftsman_interview"
+                android:textColor="@drawable/radiobutton_textcolorchange"
+                android:textSize="@dimen/font_30" />
+        </RelativeLayout>
+    </me.shihao.library.XRadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

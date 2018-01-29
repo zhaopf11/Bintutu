@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_newproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_330"
+        android:src="@drawable/product1" />
+
+
+    <TextView
+        android:id="@+id/text_shortintroduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:paddingBottom="@dimen/ui_margin_20"
+        android:paddingTop="@dimen/ui_margin_20"
+        android:text="明星同款"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/font_26"
+        android:ellipsize="end"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥199.00"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_30"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/text_beforeprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_26"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="@dimen/ui_margin_20"
+            android:text="￥199.00"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.zhurui.bunnymall.cart.fragment.CartFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_90"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navigation_bar_bg"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/gray_bg"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_all"
+            style="@style/checkbox_stytle"
+            android:layout_centerVertical="true"
+            android:text="@string/choose_all"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_26"
+            android:padding="@dimen/ui_margin_20"
+            android:layout_marginLeft="@dimen/ui_30" />
+        
+        
+        <TextView
+            android:id="@+id/text_cartbottom"
+            android:layout_width="@dimen/ui_200"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/color_d2ba91"
+            android:textColor="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30"
+            android:text="结算"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/lin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/text_cartbottom"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/ui_margin_20"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_d2ba91"
+                    android:textSize="@dimen/font_26"
+                    android:text="¥"/>
+
+                <TextView
+                    android:id="@+id/text_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_d2ba91"
+                    android:textSize="@dimen/font_30"
+                    android:text="199.00"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_24"
+                android:text="@string/no_fare"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/xrecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/rel_bottom"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/lin_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart_empty"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物袋竟然是空的"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再忙也要买点什么犒劳自己！"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_noright_common"
+        />
+
+
+</RelativeLayout>

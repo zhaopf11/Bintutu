@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/navigation_bar_margin">
+
+    <RelativeLayout
+        android:id="@+id/rel_allproduct"
+        style="@style/adapter_store_productclassify"
+        >
+        <TextView
+            android:id="@+id/text_bigclassify"
+            style="@style/mine_collection_count.main"
+            android:text="女鞋"
+            android:textColor="@color/gray3"/>
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:text="@string/look_all"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_24"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <com.zhurui.bunnymall.viewutils.GridViewInScrollView
+        android:id="@+id/grid_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/navigation_bar_margin"
+        android:horizontalSpacing="@dimen/navigation_bar_margin">
+
+    </com.zhurui.bunnymall.viewutils.GridViewInScrollView>
+
+
+
+</LinearLayout>

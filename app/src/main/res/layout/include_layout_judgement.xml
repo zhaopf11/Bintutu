@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_judgement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lin_judge_info"
+            style="@style/product_detail_lin"
+            android:gravity="center_vertical">
+
+            <com.zhurui.bunnymall.viewutils.CircleImageView
+                android:id="@+id/circle_head"
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="@dimen/margin_50"
+                android:layout_marginRight="@dimen/ui_margin_20"
+                android:src="@drawable/banner1"
+                app:border_color="@color/navigation_bar_bg"
+                app:border_width="2px" />
+
+            <TextView
+                android:id="@+id/text_nickname"
+                style="@style/foot_message_detaile_text"
+                android:layout_marginRight="@dimen/ui_margin_20"
+                android:text="小明" />
+
+            <ImageView
+                android:id="@+id/img_heart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/navigation_bar_margin"
+                android:src="@drawable/heart_judgement" />
+
+            <ImageView
+                android:id="@+id/img_heart2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/navigation_bar_margin"
+                android:src="@drawable/heart_judgement" />
+
+            <ImageView
+                android:id="@+id/img_heart3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/navigation_bar_margin"
+                android:src="@drawable/heart_judgement" />
+
+            <ImageView
+                android:id="@+id/img_heart4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/navigation_bar_margin"
+                android:src="@drawable/heart_judgement" />
+
+            <ImageView
+                android:id="@+id/img_heart5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_judgement" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_judgement"
+            style="@style/foot_message_detaile_text"
+            android:layout_width="match_parent"
+            android:background="@color/navigation_bar_bg"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin"
+            android:paddingTop="@dimen/ui_margin_20"
+            android:text="响应党的号召，紧随党的脚步，为人民服务"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_26" />
+
+        <LinearLayout
+            android:id="@+id/ll_size_color"
+            style="@style/product_detail_lin"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_productcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                android:text="颜色："
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/font_24" />
+
+            <TextView
+                android:id="@+id/text_productsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尺码："
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/font_24" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_check_all"
+            style="@style/product_detail_lin">
+
+            <TextView
+                android:id="@+id/text_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/ui_40"
+                android:text="查看全部评价 >>"
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_26" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

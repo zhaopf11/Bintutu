@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <include layout="@layout/title_noright_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/foot_message_detail_lin">
+
+                <LinearLayout style="@style/foot_message_detail_linear">
+
+                    <TextView
+                        style="@style/foot_message_detaile_text"
+                        android:text="@string/sex1" />
+
+                    <TextView
+                        android:id="@+id/text_sex"
+                        style="@style/foot_message_detaile_text"
+                        android:text="女" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/foot_message_detail_linear">
+
+                    <TextView
+                        style="@style/foot_message_detaile_text"
+                        android:text="@string/height" />
+
+                    <TextView
+                        android:id="@+id/text_height"
+                        style="@style/foot_message_detaile_text"
+                        android:text="175cm" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/foot_message_detail_linear">
+
+                    <TextView
+                        style="@style/foot_message_detaile_text"
+                        android:text="体重："
+                        android:textSize="@dimen/font_24" />
+
+                    <TextView
+                        android:id="@+id/text_weight"
+                        style="@style/foot_message_detaile_text"
+                        android:text=""
+                        android:textSize="@dimen/font_24" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/foot_message_detail_linear">
+
+                    <TextView
+                        style="@style/foot_message_detaile_text"
+                        android:text="@string/shoe_size" />
+
+                    <TextView
+                        android:id="@+id/text_shoesize"
+                        style="@style/foot_message_detaile_text"
+                        android:text="36" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/foot_message_detail_lin">
+                <LinearLayout style="@style/foot_message_detail_linear">
+
+                    <TextView
+                        style="@style/foot_message_detaile_text"
+                        android:text="@string/birtday" />
+
+                    <TextView
+                        android:id="@+id/text_birthday"
+                        style="@style/foot_message_detaile_text"
+                        android:text="" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/foot_message_detail_lin">
+
+                <LinearLayout style="@style/foot_message_detail_linear">
+
+                    <TextView
+                        style="@style/foot_message_detaile_text"
+                        android:text="特殊脚型描述："
+                        android:textSize="@dimen/font_24" />
+
+                    <TextView
+                        android:id="@+id/text_desc"
+                        style="@style/foot_message_detaile_text"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textSize="@dimen/font_24" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_40"
+                android:visibility="gone">
+
+                <include layout="@layout/layout_footmessage_common" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_400"
+                android:layout_marginTop="@dimen/ui_70">
+
+                <ImageView
+                    android:id="@+id/blurView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_bg"
+                    android:scaleType="centerCrop" />
+
+                <com.zhurui.bunnymall.viewutils.SpeedRecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_footmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/mine_collection_count"
+                    android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginTop="@dimen/ui_70"
+                    android:text="@string/foot_message" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                    android:background="@color/navigation_bar_bg">
+
+                    <TextView
+                        android:id="@+id/text_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="@dimen/ui_margin_20"
+                        android:layout_marginTop="@dimen/ui_margin_20"
+                        android:layout_toLeftOf="@+id/text_leftfoot"
+                        android:paddingLeft="@dimen/ui_margin_20"
+                        android:text="单位：毫米"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_24" />
+
+
+                    <TextView
+                        android:id="@+id/text_rightfoot"
+                        style="@style/foot_message_detail"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2px"
+                        android:text="右脚" />
+
+                    <TextView
+                        android:id="@+id/text_leftfoot"
+                        style="@style/foot_message_detail"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/text_rightfoot"
+                        android:text="左脚" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_footdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                        android:layout_marginRight="@dimen/navigation_bar_edit_margin">
+
+                    </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

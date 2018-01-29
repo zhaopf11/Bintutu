@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhurui.bunnymall.home.activity.LogisticalDetailActivity"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <include layout="@layout/title_noright_common"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="2px"
+        android:padding="@dimen/navigation_bar_edit_margin"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="@dimen/ui_160"
+            android:layout_height="@dimen/ui_160">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/ui_160"
+            android:layout_height="@dimen/ui_160"
+            android:background="@drawable/gray_shape_bg"
+            android:src="@drawable/product1"/>
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_40"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/navigation_bar_bg"
+                android:textSize="@dimen/font_24"
+                android:background="#e0000000"
+                android:text="1件商品"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                   style="@style/mine_collection_count"
+                    android:textColor="@color/gray3"
+                    android:text="物流状态："
+                    android:layout_marginRight="@dimen/ui_margin_20"/>
+
+                <TextView
+                    android:id="@+id/text_logisticalstate"
+                    style="@style/mine_collection_count"
+                    android:textColor="@color/color_d2ba91"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_logisticalcompany"
+                style="@style/mine_collection_type"
+                android:text="承运公司："/>
+
+            <TextView
+                android:id="@+id/text_logisticalnum"
+                style="@style/mine_collection_type"
+                android:text="运单编号："/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_logistical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/ui_72">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

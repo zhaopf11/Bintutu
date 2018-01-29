@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_260"
+        android:scaleType="centerCrop"
+        android:background="@drawable/limit_team_normal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/navigation_bar_edit_margin"
+        >
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_26"
+            android:textColor="@color/gray3"
+            android:text="夏季女鞋专场"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/text_gonow"
+            android:layout_width="@dimen/ui_100"
+            android:layout_height="@dimen/margin_50"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/orange_corner_bg"
+            android:textSize="@dimen/font_20"
+            android:text="立即抢购"
+            android:textColor="@color/font_orange"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

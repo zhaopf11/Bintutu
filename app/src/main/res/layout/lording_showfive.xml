@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guidefive"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/firstStart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ui_88"
+        android:layout_marginBottom="68dp"
+        android:text="开启定制生活"
+        android:paddingRight="@dimen/font_36"
+        android:paddingLeft="@dimen/font_36"
+        android:gravity="center"
+        android:background="@drawable/bt_backgroud"
+        android:textColor="@color/color_d2ba91"
+        android:textSize="@dimen/font_30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

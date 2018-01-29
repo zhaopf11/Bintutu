@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/navigation_bar_edit_margin"
+    android:background="@color/navigation_bar_bg"
+    android:layout_marginBottom="@dimen/ui_margin_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_store"
+            android:layout_width="@dimen/ui_80"
+            android:layout_height="@dimen/ui_80"
+            android:background="@drawable/gray_shape_bg"
+            android:src="@drawable/store"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/ui_margin_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_storename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_30"
+                    android:text="GWD私人定制鞋柜"
+                    android:layout_toLeftOf="@+id/text_opertion"
+                    android:gravity="left"/>
+
+
+                <TextView
+                    android:id="@+id/text_opertion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="..."
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/navigation_bar_edit_margin">
+
+                <ImageView
+                    android:id="@+id/img_diamond1"
+                    style="@style/store_home_diamond"
+                    android:layout_marginRight="@dimen/ui_margin_20"/>
+
+                <ImageView
+                    android:id="@+id/img_diamond2"
+                    style="@style/store_home_diamond"
+                    android:layout_marginRight="@dimen/ui_margin_20"/>
+
+                <ImageView
+                    android:id="@+id/img_diamond3"
+                    style="@style/store_home_diamond"
+                    android:layout_marginRight="@dimen/ui_margin_20"/>
+
+                <ImageView
+                    android:id="@+id/img_diamond4"
+                    style="@style/store_home_diamond"
+                    android:layout_marginRight="@dimen/ui_margin_20"/>
+
+                <ImageView
+                    android:id="@+id/img_diamond5"
+                    style="@style/store_home_diamond"
+                    android:layout_marginRight="@dimen/ui_margin_20"/>
+
+                <TextView
+                    android:id="@+id/text_store_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/orange_corner_bg"
+                    android:textColor="@color/color_d2ba91"
+                    android:text="优质店铺"
+                    android:textSize="@dimen/font_24"
+                    android:paddingLeft="@dimen/navigation_bar_margin"
+                    android:paddingRight="@dimen/navigation_bar_margin"
+                    android:paddingTop="@dimen/ui_5"
+                    android:paddingBottom="@dimen/ui_5"
+                    android:gravity="center"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_160">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_product_iamge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <!--<com.android.volley.toolbox.NetworkImageView-->
+                    <!--android:id="@+id/img_store1"-->
+                    <!--style="@style/store_collections_img"-->
+                    <!--android:layout_marginRight="@dimen/navigation_bar_edit_margin"-->
+                    <!--android:background="@drawable/product1"-->
+                    <!--/>-->
+
+                <!--<com.android.volley.toolbox.NetworkImageView-->
+                    <!--android:id="@+id/img_store2"-->
+                    <!--style="@style/store_collections_img"-->
+                    <!--android:layout_marginRight="@dimen/navigation_bar_edit_margin"-->
+                    <!--android:background="@drawable/product1"-->
+                    <!--/>-->
+
+                <!--<com.android.volley.toolbox.NetworkImageView-->
+                    <!--android:id="@+id/img_store3"-->
+                    <!--style="@style/store_collections_img"-->
+                    <!--android:background="@drawable/product1"-->
+                    <!--/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

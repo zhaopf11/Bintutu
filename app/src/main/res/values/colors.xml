@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+
+    <!--font_color-->
+    <color name="title_font_black">#000000</color>
+    <color name="font_orange">#ec7a2e</color>
+
+    <!--ui_color-->
+    <color name="navigation_bar_bg">#ffffff</color>
+    <color name="gray_bg">#F4F4F4</color>
+    <color name="lin_bg">#c4c4c4</color>
+    <color name="orange">#f07b2e</color>
+    <color name="gray">#999999</color>
+    <color name="hot_store_bg">#fff6ef</color>
+    <color name="gray3">#333333</color>
+    <color name="translucence">#99000000</color>
+    <color name="color_656b70">#656b70</color>
+    <color name="color_e3f3fd">#e3f3fd</color>
+    <color name="color_d2ba91">#d2b991</color>
+    <color name="color_aaaaaa">#999aaa</color>
+    <color name="color_999999">#999999</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.zhurui.bunnymall.mine.activity.MyFootPrintActivity">
+
+    <include layout="@layout/title_noright_common" />
+
+    <com.zhurui.bunnymall.viewutils.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.zhurui.bunnymall.viewutils.pulltorefresh.pullableview.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <com.zhurui.bunnymall.viewutils.MyExpandableListView
+                android:id="@+id/expandable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2px"
+                android:childDivider="@color/gray_bg"
+                android:divider="@color/gray_bg"
+                android:dividerHeight="2px"
+                android:groupIndicator="@null"
+                android:scrollbars="none">
+
+            </com.zhurui.bunnymall.viewutils.MyExpandableListView>
+        </com.zhurui.bunnymall.viewutils.pulltorefresh.pullableview.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.zhurui.bunnymall.viewutils.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <include layout="@layout/title_noright_common"/>
+
+    <RelativeLayout style="@style/enter_mall_lin">
+
+        <TextView
+            style="@style/foot_message_detaile_text"
+            android:layout_centerVertical="true"
+            android:text="需要发票"
+            android:textSize="@dimen/font_30" />
+        <CheckBox
+            android:id="@+id/checkbox_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_swithcbtn" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/enter_mall_lin">
+
+        <TextView
+            android:id="@+id/text_invoicetitle"
+            style="@style/foot_message_detaile_text"
+            android:layout_centerVertical="true"
+            android:text="*发票抬头"
+            android:textSize="@dimen/font_30" />
+        <RadioGroup
+            android:id="@+id/radiogroup_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/text_invoicetitle"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_hight">
+            <RadioButton
+                android:id="@+id/radio_personal"
+                style="@style/enter_mall_raido.invoice"
+                android:checked="true"
+                android:text="@string/type_personal" />
+            <RadioButton
+                android:id="@+id/radio_company"
+                style="@style/enter_mall_raido.invoice"
+                android:text="公司" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/navigation_bar_edit_margin"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_26"
+        android:textColor="@color/gray"
+        android:cursorVisible="false"
+        android:hint="请输入个人姓名"/>
+
+    <EditText
+        android:id="@+id/edit_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/navigation_bar_edit_margin"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_26"
+        android:textColor="@color/gray"
+        android:hint="纳税人识别号"
+        android:visibility="gone"/>
+
+</LinearLayout>  

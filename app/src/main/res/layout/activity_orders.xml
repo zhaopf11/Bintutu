@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+
+    <include layout="@layout/title_noright_common" />
+    <RadioGroup
+        android:id="@+id/radiogroup_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_allorders"
+            style="@style/home_store_radiobutton.order"
+            android:text="@string/all"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_topay"
+            style="@style/home_store_radiobutton.order"
+            android:text="@string/topay" />
+
+        <RadioButton
+            android:id="@+id/radio_tosend"
+            style="@style/home_store_radiobutton.order"
+            android:text="@string/tosend" />
+        <RadioButton
+            android:id="@+id/radio_toget"
+            style="@style/home_store_radiobutton.order"
+            android:text="@string/toget" />
+
+        <RadioButton
+            android:id="@+id/radio_tojudge"
+            style="@style/home_store_radiobutton.order"
+            android:text="@string/tojudge" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/lin_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/ui_260"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30"
+            android:text="您还没有相关订单"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_24"
+            android:text="可以去逛逛看看有哪些想买的"/>
+
+
+        <TextView
+            android:id="@+id/text_stroll"
+            android:layout_width="@dimen/ui_200"
+            android:layout_height="@dimen/ui_70"
+            android:layout_marginTop="@dimen/ui_70"
+            android:textColor="@color/color_d2ba91"
+            android:background="@drawable/orange_corner_bg"
+            android:textSize="@dimen/font_30"
+            android:text="逛一逛"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/recycler_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:groupIndicator="@null"
+        android:dividerHeight="-1dp"
+      >
+
+    </ExpandableListView>
+</LinearLayout>

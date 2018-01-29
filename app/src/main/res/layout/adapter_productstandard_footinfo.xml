@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radiobutton_bg_enter_mall"
+    android:textColor="@drawable/radiobutton_textcolorchange"
+    android:button="@null"
+    android:textSize="@dimen/font_24"
+    android:text="李晓莉的足型数据"
+    android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+    android:gravity="center"
+    android:padding="@dimen/navigation_bar_margin">
+
+</RadioButton>

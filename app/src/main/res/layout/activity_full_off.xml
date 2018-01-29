@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.zhurui.bunnymall.home.activity.FullOffActivity">
+
+    <include layout="@layout/title_noright_common" />
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/ui_260">
+    </com.jude.rollviewpager.RollPagerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:paddingBottom="@dimen/ui_margin_20"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:paddingTop="@dimen/ui_margin_20">
+
+        <TextView
+            android:id="@+id/text_fulloff1"
+            style="@style/full_off_textview"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/text_fulloff2"
+            style="@style/full_off_textview"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/text_fulloff3"
+            style="@style/full_off_textview"
+            android:text="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/ui_margin_20"
+        android:paddingTop="@dimen/navigation_bar_edit_margin"
+        android:text="距离盛夏大作战满减活动结束还有"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/font_30" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center">
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_day"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="0天"-->
+            <!--android:textColor="@color/font_orange"-->
+            <!--android:textSize="@dimen/font_26" />-->
+
+        <com.zhurui.bunnymall.viewutils.Anticlockwise
+            android:id="@+id/anticlockwise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_26" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

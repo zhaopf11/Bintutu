@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CustomDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_90"
+        android:background="@color/navigation_bar_bg">
+
+        <RelativeLayout
+            android:id="@+id/ll_liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/include_product_attr_title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_foottype"
+            style="@style/MatchWrap"
+            android:layout_below="@+id/ll_liner"
+            android:layout_marginTop="@dimen/ui_margin_20"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/include_product_check_attr"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/lin_foottype"
+            android:layout_marginTop="@dimen/ui_40"
+            android:background="@color/gray_bg" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rel_btn"
+            android:layout_below="@+id/txt"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/navigation_bar_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/MatchWrap"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginTop="@dimen/ui_60"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/circle_shape"
+                        android:drawablePadding="@dimen/ui_5"
+                        android:text="量脚尺码"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/font_30" />
+
+                    <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+                        android:id="@+id/size_foot_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/ui_30"
+                        android:layout_marginTop="@dimen/ui_40">
+
+                    </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/MatchWrap"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginTop="@dimen/ui_80"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/circle_shape"
+                        android:drawablePadding="@dimen/ui_5"
+                        android:text="标准尺码"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/font_30" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/ui_120"
+                        android:layout_marginLeft="@dimen/ui_30"
+                        android:background="@drawable/size_style">
+
+                        <com.zhurui.bunnymall.viewutils.MySelfHorizontalScrollView
+                            android:id="@+id/hor_scrollview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scrollbars="none">
+
+                            <com.zhurui.bunnymall.viewutils.RuleView
+                                android:id="@+id/rule_view"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"/>
+                        </com.zhurui.bunnymall.viewutils.MySelfHorizontalScrollView>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="22.5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="37dp"
+                            android:background="@color/color_d2ba91"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/ui_80"
+                    android:descendantFocusability="blocksDescendants"
+                    >
+
+                    <com.zhurui.bunnymall.viewutils.MyExpandableListView
+                        android:id="@+id/attr_expandableview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:groupIndicator="@null"
+                        android:scrollbars="none">
+
+                    </com.zhurui.bunnymall.viewutils.MyExpandableListView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_100"
+                    android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                    android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+                    <TextView
+                        style="@style/adapter_order"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/circle_shape"
+                        android:drawablePadding="@dimen/ui_5"
+                        android:text="数量" />
+
+                    <com.zhurui.bunnymall.viewutils.AmountView
+                        android:id="@+id/amountView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                    </com.zhurui.bunnymall.viewutils.AmountView>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/include_product_attr_btn" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

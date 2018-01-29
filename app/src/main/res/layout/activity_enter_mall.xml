@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" android:id="@+id/include_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/include_title"
+        android:layout_above="@+id/btn_submit">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="@string/store_name" />
+
+
+                <EditText
+                    android:id="@+id/edit_storename"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/navigation_bar_bg"
+                    android:gravity="center_vertical"
+                    android:hint="请输入商户名称"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="@string/store_type" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_personal"
+                        style="@style/enter_mall_raido"
+                        android:checked="true"
+                        android:text="@string/type_personal" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mall"
+                        style="@style/enter_mall_raido"
+                        android:text="@string/type_mall" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="@string/mall_logo" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/text_logo"
+                        android:layout_width="@dimen/ui_150"
+                        android:layout_height="@dimen/ui_150"
+                        android:src="@drawable/add_logo" />
+
+                    <TextView
+                        android:id="@+id/text_adavice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ui_margin_20"
+                        android:text="建议尺寸200*200px"
+                        android:textColor="@color/color_d2ba91"
+                        android:textSize="@dimen/font_24" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_identify"
+                    style="@style/enter_mall_text"
+                    android:text="@string/identify" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/text_img1"
+                        android:layout_width="@dimen/ui_300"
+                        android:layout_height="@dimen/ui_188"
+                        android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                        android:src="@drawable/identify_up"
+                       />
+
+                    <ImageView
+                        android:id="@+id/text_img2"
+                        android:layout_width="@dimen/ui_300"
+                        android:layout_height="@dimen/ui_188"
+                        android:src="@drawable/identify_down"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_iamge_lager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ui_margin_20"
+                        android:text="图片大小不超过1M"
+                        android:textColor="@color/color_d2ba91"
+                        android:textSize="@dimen/font_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linlay_design_ourself"
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="@string/designe_self" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_designeself"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_yes"
+                        style="@style/enter_mall_raido"
+                        android:background="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:drawablePadding="@dimen/ui_margin_20"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/radio_no"
+                        style="@style/enter_mall_raido"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:text="否" />
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="right|center_vertical">
+
+                    <ImageView
+                        android:id="@+id/img_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/help" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="@string/contacts" />
+
+
+                <EditText
+                    android:id="@+id/edit_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/navigation_bar_bg"
+                    android:gravity="center_vertical"
+                    android:hint="请输入联系人"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="@string/contact_phone" />
+
+
+                <EditText
+                    android:id="@+id/edit_contactphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/navigation_bar_bg"
+                    android:gravity="center_vertical"
+                    android:hint="请输入联系电话"
+                    android:inputType="phone"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="@string/contact_email"/>
+
+
+                <EditText
+                    android:id="@+id/edit_contactemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/navigation_bar_bg"
+                    android:gravity="center_vertical"
+                    android:hint="请输入常用邮箱"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24"
+                    />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_choosecity"
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_choosecity"
+                    style="@style/enter_mall_text"
+                    android:text="@string/city" />
+
+                <TextView
+                    android:id="@+id/text_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/text_choosecity"
+                    android:layout_toLeftOf="@+id/img_down"
+                    android:drawableRight="@drawable/down_normal"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24"
+                    android:gravity="center_vertical"
+                   />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/enter_mall_lin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text=""/>
+
+
+                <EditText
+                    android:id="@+id/edit_addressdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:background="@color/navigation_bar_bg"
+                    android:hint="请输入详细地址"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linlay_states"
+                style="@style/enter_mall_lin"
+                android:visibility="gone"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="审核状态"
+                    android:id="@+id/textView" />
+
+
+                <TextView
+                    android:id="@+id/shenhe_states"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/navigation_bar_bg"
+                    android:paddingTop="@dimen/ui_30"
+                    android:text="审核通过"
+                    android:textColor="@color/color_d2ba91"
+                    android:textSize="@dimen/font_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linlay_message"
+                style="@style/enter_mall_lin"
+                android:visibility="gone"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/enter_mall_text"
+                    android:text="反馈信息" />
+
+
+                <TextView
+                    android:id="@+id/shenhe_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/navigation_bar_bg"
+                    android:gravity="center_vertical"
+                    android:text="资质符合平台要求"
+                    android:textColor="@color/color_d2ba91"
+                    android:textSize="@dimen/font_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_infomind"
+                style="@style/enter_mall_lin"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/ui_margin_20"
+                android:paddingBottom="@dimen/ui_30"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击[提交申请]表示同意"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_26" />
+
+                <TextView
+                    android:id="@+id/text_service_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/navigation_bar_margin"
+                    android:text="《宾兔兔电商平台特约服务合作协议》"
+                    android:textColor="@color/color_d2ba91"
+                    android:textSize="@dimen/font_26" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_80"
+        android:background="@color/color_d2ba91"
+        android:textColor="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_30"
+        android:text="提交申请"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

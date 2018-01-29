@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_360"
+                android:layout_marginTop="2px"
+                android:background="@color/navigation_bar_bg"
+                android:padding="@dimen/navigation_bar_edit_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ui_150"
+                    android:layout_alignParentBottom="true">
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/rel_judgement1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginRight="@dimen/navigation_bar_margin"-->
+                        <!--android:visibility="gone">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_judgement1"-->
+                            <!--android:layout_width="@dimen/ui_140"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:src="@drawable/product1"-->
+                            <!--android:visibility="visible" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_delete1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="-15px"-->
+                            <!--android:layout_toRightOf="@+id/img_judgement1"-->
+                            <!--android:src="@drawable/picture_delete" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/rel_judgement2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginRight="@dimen/navigation_bar_margin"-->
+                        <!--android:visibility="gone">-->
+
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_judgement2"-->
+                            <!--android:layout_width="@dimen/ui_140"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:src="@drawable/product1"-->
+                            <!--android:visibility="visible" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_delete2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="-15px"-->
+                            <!--android:layout_toRightOf="@+id/img_judgement2"-->
+                            <!--android:src="@drawable/picture_delete" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/rel_judgement3"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginRight="@dimen/navigation_bar_margin"-->
+                        <!--android:visibility="gone">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_judgement3"-->
+                            <!--android:layout_width="@dimen/ui_140"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:src="@drawable/product1"-->
+                            <!--android:visibility="visible" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_delete3"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="-15px"-->
+                            <!--android:layout_toRightOf="@+id/img_judgement3"-->
+                            <!--android:src="@drawable/picture_delete" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/rel_judgement4"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginRight="@dimen/navigation_bar_margin"-->
+                        <!--android:visibility="gone">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_judgement4"-->
+                            <!--android:layout_width="@dimen/ui_140"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:src="@drawable/product1"-->
+                            <!--android:visibility="visible" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_delete4"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="-15px"-->
+                            <!--android:layout_toRightOf="@+id/img_judgement4"-->
+                            <!--android:src="@drawable/picture_delete" />-->
+                    <!--</RelativeLayout>-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/text_addpicture"
+                        android:layout_width="@dimen/ui_140"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dashed_corner_bg"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="@dimen/font_24"
+                       />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_mind"
+                    style="@style/share_text"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24"
+                    android:background="@null"
+                    android:hint="宝贝满足你的期待了吗？说说你的看法，分享给想买的他们吧"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_88"
+                android:layout_marginTop="2px"
+                android:background="@color/navigation_bar_bg"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+                <CheckBox
+                    android:id="@+id/checkbox_anonymous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="@dimen/navigation_bar_edit_margin"
+                    android:text="匿名"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_30" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="你写的评价会以匿名的形式展现"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_88"
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:background="@color/navigation_bar_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                android:text="评价"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_30" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_88"
+                android:background="@color/navigation_bar_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="描述相符："
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_30" />
+
+                <com.zhurui.bunnymall.viewutils.EvaluateHeartLin
+                    android:id="@+id/heartlin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ui_40">
+
+                </com.zhurui.bunnymall.viewutils.EvaluateHeartLin>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_88"
+                android:background="@color/navigation_bar_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="物流服务："
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_30" />
+
+                <com.zhurui.bunnymall.viewutils.EvaluateHeartLin
+                    android:id="@+id/heartlin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ui_40">
+
+                </com.zhurui.bunnymall.viewutils.EvaluateHeartLin>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_88"
+                android:background="@color/navigation_bar_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="服务态度："
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_30" />
+
+                <com.zhurui.bunnymall.viewutils.EvaluateHeartLin
+                    android:id="@+id/heartlin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ui_40">
+
+                </com.zhurui.bunnymall.viewutils.EvaluateHeartLin>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

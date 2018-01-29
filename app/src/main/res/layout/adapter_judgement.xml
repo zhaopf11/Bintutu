@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/navigation_bar_edit_margin"
+    android:paddingTop="@dimen/navigation_bar_edit_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <com.zhurui.bunnymall.viewutils.CircleImageView
+            android:id="@+id/circle_head"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ui_margin_20"
+            android:src="@drawable/banner1"
+            app:border_color="@color/navigation_bar_bg"
+            app:border_width="2px" />
+
+        <TextView
+            android:id="@+id/text_nickname"
+            style="@style/foot_message_detaile_text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ui_margin_20"
+            android:layout_toRightOf="@+id/circle_head"
+            android:layout_toLeftOf="@+id/text"
+            android:text="C***鹿" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2017.06.12  12:33"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_24" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_judgement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+        android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:text="颜色超级好看，很不错的哦，下次还会再来买的，希望有更多的产品哦！！！"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/font_30" />
+
+    <LinearLayout
+        android:id="@+id/lin_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_150"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_judgement"
+            style="@style/judgement_img"
+            android:src="@drawable/list_normal"/>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_judgement1"
+            style="@style/judgement_img"
+           />
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_judgement2"
+            style="@style/judgement_img"
+          />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_judgement3"
+            style="@style/judgement_img"
+           />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/productinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_24"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

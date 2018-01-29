@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ui_80"
+    android:background="@color/navigation_bar_bg">
+    <TextView
+        android:id="@+id/text_num"
+        android:layout_width="@dimen/ui_80"
+        android:layout_height="match_parent"
+        android:textColor="@color/gray3"
+        android:gravity="center"
+        android:background="@drawable/gray_shape_bg"
+        android:padding="@dimen/ui_margin_20"
+        android:textSize="@dimen/font_24"
+        android:text="1"/>
+
+    <TextView
+        android:id="@+id/text_rightfoot"
+        style="@style/foot_message_detail"
+        android:layout_alignParentRight="true"
+        android:text="263.3"
+        android:background="@drawable/gray_shape_bg"
+        android:layout_height="match_parent"
+       />
+
+    <TextView
+        android:id="@+id/text_leftfoot"
+        style="@style/foot_message_detail"
+        android:layout_toLeftOf="@+id/text_rightfoot"
+        android:text="267.7"
+        android:background="@drawable/gray_shape_bg"
+        android:layout_height="match_parent"
+      />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/gray_shape_bg"
+        android:padding="@dimen/ui_margin_20"
+        android:layout_toRightOf="@+id/text_num"
+        android:layout_toLeftOf="@+id/text_leftfoot"
+        android:text="脚长"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/font_24"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    >
+<include layout="@layout/title_noright_common" android:id="@+id/include_title"/>
+    <RelativeLayout
+        android:id="@+id/rel_balance"
+        style="@style/enter_mall_lin"
+        android:layout_below="@+id/include_title"
+        android:layout_marginTop="@dimen/ui_margin_20">
+
+        <CheckBox
+            android:id="@+id/checkbox_balance"
+            style="@style/foot_message_detaile_text"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_checkbox"
+            android:text="余额支付"
+            android:drawablePadding="@dimen/navigation_bar_edit_margin"
+            android:textSize="@dimen/font_30"
+            android:checked="true"/>
+
+        <TextView
+            android:id="@+id/text_balance"
+            style="@style/mine_collection_type"
+            android:layout_centerVertical="true"
+            android:text="余额：8888"
+            android:layout_marginTop="0px"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_below="@+id/rel_balance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <CheckBox
+            android:id="@+id/checkbox_alipay"
+            style="@style/foot_message_detaile_text"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_checkbox"
+            android:drawablePadding="@dimen/navigation_bar_edit_margin"
+            android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+            android:textSize="@dimen/font_30"
+            android:layout_alignParentTop="true"
+           />
+
+        <TextView
+            android:id="@+id/text_alipay"
+            style="@style/foot_message_detaile_text"
+            android:textSize="@dimen/font_30"
+            android:drawableLeft="@drawable/pay_alipay"
+            android:text="支付宝"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/ui_margin_20"
+            android:layout_toRightOf="@id/checkbox_alipay"
+            android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+            />
+
+
+        <TextView
+            style="@style/mine_collection_type"
+            android:layout_below="@+id/text_alipay"
+            android:text="抽奖赢礼券，最高88元"
+            android:layout_toRightOf="@id/checkbox_alipay"
+            android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_wechat"
+        style="@style/enter_mall_lin"
+        android:layout_below="@+id/rel_alipay"
+        android:layout_marginTop="2px"
+        >
+        <CheckBox
+            android:id="@+id/checkbox_wechat"
+            style="@style/foot_message_detaile_text"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_checkbox"
+            android:drawablePadding="@dimen/navigation_bar_edit_margin"
+            android:textSize="@dimen/font_30"
+            />
+
+        <TextView
+            android:id="@+id/text_wechat"
+            style="@style/foot_message_detaile_text"
+            android:textSize="@dimen/font_30"
+            android:drawableLeft="@drawable/pay_wechat"
+            android:text="微信"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/ui_margin_20"
+            android:layout_toRightOf="@id/checkbox_wechat"
+            android:layout_centerVertical="true"
+            />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btn_bottom"
+        android:text="确认"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

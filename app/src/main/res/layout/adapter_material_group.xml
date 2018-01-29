@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/mine_main"
+android:layout_marginTop="@dimen/ui_margin_20"
+    >
+<TextView
+    android:id="@+id/text_typename"
+    style="@style/adapter_order"
+    android:textSize="@dimen/font_30"
+    android:layout_centerVertical="true"
+    android:text="选择足型数据" />
+
+<CheckBox
+    android:id="@+id/checkbox_type"
+    style="@style/right_checkbox"
+    android:padding="@dimen/ui_margin_20"
+    android:text=""
+    />
+</RelativeLayout>

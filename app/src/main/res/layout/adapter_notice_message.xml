@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/navigation_bar_edit_margin">
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="@dimen/ui_120"
+        android:layout_height="@dimen/navigation_bar_edit_margin"
+        android:background="@drawable/gray_corner_notice_bg"
+        android:textColor="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_18"
+        android:text="2017-06-20"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/navigation_bar_edit_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_corner_bg"
+        android:padding="@dimen/navigation_bar_edit_margin"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/text_noticetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_30"
+                android:maxLines="1"
+                android:text="您有200元优惠今天即将到期"
+                />
+
+            <TextView
+                android:id="@+id/text_logisticalcompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_24"
+                android:textColor="@color/gray"
+                android:text="(中通快递)"
+                android:layout_marginLeft="@dimen/ui_margin_20"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_notice"
+                android:layout_width="@dimen/ui_160"
+                android:layout_height="@dimen/ui_160"
+                android:background="@drawable/noticemessage_card"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+            <TextView
+                android:id="@+id/text_noticeintroduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/navigation_bar_margin"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_24"
+                android:text="宾兔兔购物券拥有折上折，多买多送，优惠多多"
+                />
+
+                <TextView
+                    android:id="@+id/text_logisticalnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/font_24"
+                    android:textColor="@color/gray"
+                    android:text="运单编号:2554255551236965"
+                    android:gravity="bottom"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CustomDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/ui_90">
+
+
+    <ScrollView
+        android:id="@+id/scroll_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_bottom"
+        android:background="@color/navigation_bar_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin"
+            android:paddingTop="@dimen/navigation_bar_edit_margin">
+
+            <RelativeLayout
+                android:visibility="gone"
+                style="@style/screen_dialog_lin">
+
+                <TextView
+                    style="@style/foot_message_detaile_text"
+                    android:text="发货地址"
+                    android:textSize="@dimen/font_30" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:drawableRight="@drawable/selector_checkbox_downup"
+                    android:textColor="@color/font_orange" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    android:id="@+id/text_shanghai"
+                    android:layout_width="@dimen/ui_170"
+                    android:layout_height="@dimen/margin_60"
+                    android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                    android:background="@drawable/orange_corner_bg"
+                    android:gravity="center"
+                    android:text="上海"
+                    android:textColor="@color/font_orange"
+                    android:textSize="@dimen/font_24" />
+
+                <TextView
+                    android:id="@+id/text_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                    android:paddingRight="@dimen/navigation_bar_edit_margin"
+                    android:text="定位"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_24" />
+
+            </LinearLayout>
+
+            <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+                android:id="@+id/flow_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+
+            <LinearLayout
+                android:id="@+id/lin_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <RelativeLayout style="@style/screen_dialog_lin">
+
+                    <TextView
+                        style="@style/foot_message_detaile_text"
+                        android:text="价格区间"
+                        android:textSize="@dimen/font_30" />
+
+                    <!--     <CheckBox
+                             android:id="@+id/checkbox_price"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:button="@null"
+                             android:drawableRight="@drawable/selector_checkbox_downup" />-->
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:id="@+id/lin_center"
+                        android:layout_width="@dimen/navigation_bar_edit_margin"
+                        android:layout_height="2px"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                        android:background="@color/gray" />
+
+                    <EditText
+                        android:id="@+id/edit_low"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_60"
+                        android:layout_toLeftOf="@+id/lin_center"
+                        android:background="@drawable/gray_corner_bg"
+                        android:gravity="center"
+                        android:hint="最低价"
+                        android:inputType="number"
+                        android:textColor="@color/gray"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/font_24" />
+
+                    <EditText
+                        android:id="@+id/edit_high"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_60"
+                        android:layout_toRightOf="@+id/lin_center"
+                        android:background="@drawable/gray_corner_bg"
+                        android:gravity="center"
+                        android:hint="最高价"
+                        android:inputType="number"
+                        android:textColor="@color/gray"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/font_24" />
+
+
+                </RelativeLayout>
+
+                <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+                    android:id="@+id/flow_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/navigation_bar_edit_margin">
+
+                </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zhurui.bunnymall.viewutils.MyExpandableListView
+                    android:id="@+id/expandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none">
+
+                </com.zhurui.bunnymall.viewutils.MyExpandableListView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/gray_bg"
+            android:text="重置"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/color_d2ba91"
+            android:text="确认"
+            android:textColor="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

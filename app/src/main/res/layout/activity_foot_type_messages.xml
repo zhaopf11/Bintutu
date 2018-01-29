@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <include android:id="@+id/include_title" layout="@layout/title_noright_common" />
+
+    <ExpandableListView
+        android:id="@+id/recycler_footmessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+        android:layout_below="@+id/include_title"
+        android:layout_above="@+id/lin_bottom"
+        android:scrollbars="none"
+        android:groupIndicator="@null"
+        android:dividerHeight="-1px"
+
+        >
+    </ExpandableListView>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_contact"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/ui_80"
+            android:background="@color/gray"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30"
+            android:text="关联数据"
+            />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/ui_80"
+            android:background="@color/color_d2ba91"
+            android:textColor="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30"
+            android:text="@string/add_footmessage"
+            />
+        <include layout="@layout/bottom_ui" android:visibility="gone" />
+    </LinearLayout>
+
+
+</RelativeLayout>

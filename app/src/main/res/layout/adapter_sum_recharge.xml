@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_sumcharge"
+    android:layout_width="@dimen/ui_130"
+    android:layout_height="@dimen/margin_60"
+    android:background="@drawable/orange_corner_bg1"
+    android:textSize="@dimen/navigation_bar_edit_margin"
+    android:text="100元"
+    android:textColor="@color/color_d2ba91"
+    android:gravity="center">
+
+</TextView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_70"
+        android:layout_marginTop="2px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_noused"
+            style="@style/home_store_radiobutton.order"
+            android:checked="true"
+            android:text="@string/noused"
+            android:textSize="@dimen/font_26" />
+
+        <RadioButton
+            android:id="@+id/radio_hasused"
+            style="@style/home_store_radiobutton.order"
+            android:text="@string/hasused"
+            android:textSize="@dimen/font_26" />
+
+        <RadioButton
+            android:id="@+id/radio_haspassed"
+            style="@style/home_store_radiobutton.order"
+            android:text="@string/haspassed"
+            android:textSize="@dimen/font_26" />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

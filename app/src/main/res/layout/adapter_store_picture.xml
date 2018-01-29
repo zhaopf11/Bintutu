@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/ui_140"
+    android:visibility="visible">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/store_iamge"
+        android:layout_width="@dimen/ui_140"
+        android:layout_height="match_parent"
+        style="@style/store_collections_img"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+        android:src="@drawable/product1"
+        android:background="@drawable/product1"
+         />
+
+</RelativeLayout>
+

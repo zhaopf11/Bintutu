@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_250"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/navigation_bar_edit_margin">
+
+
+        <TextView
+            style="@style/mine_collection_count"
+            android:textColor="@color/gray3"
+            android:text="账户余额(元)"/>
+
+
+        <TextView
+            android:id="@+id/text_balance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_72"
+            android:text="0.00"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel_recharge"
+        style="@style/mine_main"
+        android:layout_marginBottom="@dimen/ui_margin_20"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        >
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/recharge"
+            android:text="@string/recharge"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/into"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_coupon"
+        style="@style/mine_main"
+        >
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/coupon"
+            android:text="@string/coupon"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/into"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_points"
+        style="@style/mine_main"
+        android:layout_marginBottom="@dimen/ui_margin_20"
+        >
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/wallet_point"
+            android:text="@string/points"
+            />
+
+        <TextView
+            android:id="@+id/text_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_30"
+            android:text="0"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ui_250"
+    android:paddingLeft="@dimen/navigation_bar_edit_margin"
+    android:paddingRight="@dimen/navigation_bar_edit_margin"
+    android:background="@color/navigation_bar_bg">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_product"
+        android:layout_width="@dimen/ui_230"
+        android:layout_height="match_parent"
+        android:src="@drawable/product1"
+        android:layout_alignParentLeft="true"/>
+
+    <com.zhurui.bunnymall.viewutils.Anticlockwise
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_orange"
+        android:textSize="@dimen/font_26"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/ui_40"
+        android:visibility="visible"
+        />
+
+
+    <TextView
+        android:id="@+id/text_gonow"
+        android:layout_width="@dimen/ui_100"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/orange_corner_bg"
+        android:textSize="@dimen/font_20"
+        android:text="马上抢"
+        android:textColor="@color/font_orange"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/ui_margin_20"
+        />
+
+    <LinearLayout
+        android:id="@+id/lin_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/ui_40"
+        android:paddingBottom="@dimen/ui_40"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_toRightOf="@+id/img_product"
+        android:layout_toLeftOf="@+id/chronometer"
+        >
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_26"
+            android:textColor="@color/gray3"
+            android:text="新款男士运动新款男士运动新款男士运动"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_20">
+
+            <TextView
+                android:id="@+id/text_countname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_24"
+                android:textColor="@color/gray"
+                android:text="库存："/>
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_24"
+                android:textColor="@color/gray"
+                android:text=""
+               />
+
+            <TextView
+                android:id="@+id/text_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_24"
+                android:textColor="@color/gray"
+                android:text="人"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/text_nowprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_30"
+                android:textColor="@color/font_orange"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/text_beforeprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_margin_20"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_24"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

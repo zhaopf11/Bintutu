@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhurui.bunnymall.home.activity.SearchActivity"
+    android:orientation="vertical"
+    android:background="@color/navigation_bar_bg"
+   >
+
+    <include layout="@layout/title_search_righttext_common" />
+
+    <RelativeLayout
+        android:id="@+id/rel_history"
+        style="@style/adapter_store_productclassify"
+        android:paddingBottom="@dimen/navigation_bar_edit_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_26"
+            android:textColor="@color/gray"
+            android:text="@string/history_record"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin">
+
+    </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+
+
+
+</LinearLayout>

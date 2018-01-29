@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:id="@+id/imgbtn_judgement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_judgement"
+            android:padding="@dimen/ui_margin_20"
+            android:background="@null"/>
+        />
+
+        <RelativeLayout
+            android:id="@+id/rlt_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/imgbtn_judgement"
+            android:layout_marginLeft="@dimen/ui_88"
+            android:padding="@dimen/ui_margin_20">
+
+            <CheckBox
+                android:id="@+id/imgbtn_collection"
+                style="@style/CheckboxStyle"
+                android:layout_width="@dimen/ui_36"
+                android:layout_height="@dimen/ui_32" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imgbtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/point_menu"
+            android:layout_marginLeft="@dimen/ui_88"
+            android:layout_alignLeft="@+id/rlt_collection"
+            android:padding="@dimen/ui_margin_20"
+            android:background="@null"/>
+        />
+    </RelativeLayout>
+</RelativeLayout>

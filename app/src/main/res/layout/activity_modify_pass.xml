@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/lin_bg" />
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_70">
+
+        <TextView
+            android:id="@+id/text_left"
+            style="@style/modify_progress_text"
+            android:text="1 验证手机号"
+            android:textColor="@color/color_d2ba91"
+            android:background="@drawable/left_white"/>
+
+        <TextView
+            android:id="@+id/text_rightprogress"
+            style="@style/modify_progress_text"
+            android:text="2 输入新密码"
+            android:textColor="@color/gray"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/lin_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <EditText
+            android:id="@+id/text_phonenum"
+            style="@style/adapter_order"
+            android:layout_height="match_parent"
+            android:text="12345678912"
+            android:layout_centerVertical="true"
+            android:background="@color/navigation_bar_bg"
+            android:inputType="textEmailAddress"
+            android:enabled="false"/>
+
+
+
+        <TextView
+            android:id="@+id/text_sendcode"
+            android:layout_width="@dimen/ui_170"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/orange_corner_bg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_24"
+            android:text="@string/send_code"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="2px"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:textSize="@dimen/font_26"
+        android:textColor="@color/gray"
+        android:hint="请输入验证码"
+        android:inputType="number"/>
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_marginTop="@dimen/ui_70"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+        android:textColor="@color/navigation_bar_bg"
+        android:background="@drawable/modify_button_bg"
+        android:text="下一步"
+        android:textSize="@dimen/font_30"/>
+
+
+
+
+</LinearLayout>  

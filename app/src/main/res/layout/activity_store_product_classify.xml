@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhurui.bunnymall.home.activity.StoreProductClassifyActivity"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+
+    <include layout="@layout/title_noright_common" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_allproduct"
+        style="@style/mine_main"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:layout_marginBottom="@dimen/ui_margin_20"
+        >
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:text="@string/store_allproduct"
+            android:textColor="@color/gray3"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_classify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <TextView
+            android:id="@+id/checkbox_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ui_70"
+            android:drawableLeft="@drawable/store_order"
+            android:drawablePadding="@dimen/ui_margin_20"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin"
+            android:text="爱美Go定制"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30" />
+
+        <TextView
+            android:id="@+id/text_orderstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="待付款"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_30"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/ui_30"
+        android:paddingLeft="@dimen/ui_30"
+        android:paddingRight="@dimen/ui_30">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/ui_180"
+            android:layout_height="@dimen/ui_180"
+            android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+            android:src="@drawable/product1" />
+
+        <LinearLayout
+            android:id="@+id/lin_produce_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_productintroduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_20"
+                android:maxLines="2"
+                android:text="明星同款一字扣简约女士"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_30" />
+
+            <TextView
+                android:id="@+id/text_price"
+                style="@style/mine_collection_count"
+                android:text="￥199.00"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_30"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10px"
+                android:text="x1"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_30" />
+
+            <TextView
+                style="@style/mine_collection_count"
+                android:text=""
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_foottype"
+        style="@style/MatchWrap"
+        android:layout_below="@+id/ll_liner"
+        android:background="@color/navigation_bar_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/ui_30"
+        android:paddingLeft="@dimen/ui_30"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/mine_collection_count"
+            android:text="确认定制项"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_30" />
+
+        <include
+            layout="@layout/include_cart_check_attr"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_below="@+id/ll_liner"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:orientation="horizontal"
+       >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/ui_30"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="商品ID:  "
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_30" />
+
+            <TextView
+                android:id="@+id/productId"
+                style="@style/WrapWrap"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="@dimen/ui_30"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="品牌:  "
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_30" />
+
+            <TextView
+                android:id="@+id/product_brand"
+                style="@style/WrapWrap"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_chat_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ui_30"
+            >
+
+            <ImageView
+                android:id="@+id/chat_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customer_service" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_footdesc"
+        style="@style/MatchWrap"
+        android:layout_below="@+id/ll_liner"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/foot"
+            style="@style/WrapWrap"
+            android:padding="@dimen/ui_30"
+            android:text="足型备注:  "
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_30" />
+
+        <EditText
+            android:id="@+id/edit_foot_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@color/navigation_bar_bg"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_30"
+            android:padding="@dimen/ui_30"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_foot_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@color/navigation_bar_bg"
+            android:singleLine="true"
+            android:text=""
+            android:padding="@dimen/ui_30"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_30" />
+
+        <LinearLayout
+            android:id="@+id/lin_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ui_30">
+
+            <ImageView
+                android:id="@+id/edit_foot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/address_edit" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

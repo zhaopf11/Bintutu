@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:layout_marginTop="@dimen/ui_margin_20"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_competitiveproduct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_355"
+        android:scaleType="fitXY"
+        android:src="@drawable/list_normal" />
+
+</LinearLayout>

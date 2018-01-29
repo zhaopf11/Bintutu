@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/home_message_lin" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_store"
+        android:layout_width="@dimen/ui_88"
+        android:layout_height="@dimen/ui_88"
+        android:src="@drawable/noticehead"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_storename"
+                style="@style/home_store_name"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/font_30"
+                android:text="小熊童鞋旗舰店"/>
+
+            <TextView
+                android:id="@+id/text_infotime"
+                style="@style/home_store_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2017/1/12"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_storeinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_24"
+            android:maxLines="1"
+            android:text="欢迎光临我们的店"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

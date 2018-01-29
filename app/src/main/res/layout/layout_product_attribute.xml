@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/translucence"
+        android:layout_marginTop="@dimen/ui_140"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_35"
+            android:layout_marginTop="@dimen/ui_70">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="可定制选项"
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_60" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_70"
+            android:layout_marginLeft="@dimen/ui_35"
+            android:layout_marginRight="@dimen/ui_35"
+            android:layout_below="@+id/ll_custom">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="（法国羊皮芭蕾鞋）"
+                android:maxLines="1"
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_36" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_40"
+            android:layout_marginLeft="@dimen/ui_35"
+            android:layout_marginRight="@dimen/ui_35"
+            android:layout_below="@+id/ll_product_name">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/color_d2ba91" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_attribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_line"
+            android:layout_marginTop="@dimen/ui_40"
+            android:layout_marginLeft="@dimen/ui_35"
+            android:layout_marginRight="@dimen/ui_35"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="尺码定制"
+                    android:textColor="@color/color_d2ba91"
+                    android:drawableLeft="@drawable/circle_shape"
+                    android:drawablePadding="@dimen/ui_11"
+                    android:paddingBottom="@dimen/ui_5"
+                    android:textSize="@dimen/ui_height_28"/>
+
+                <ListView
+                    android:id="@+id/custom_size_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="皮料定制"
+                    android:drawableLeft="@drawable/circle_shape"
+                    android:drawablePadding="@dimen/ui_11"
+                    android:textColor="@color/color_d2ba91"
+                    android:paddingBottom="@dimen/ui_5"
+                    android:textSize="@dimen/ui_height_28"/>
+
+                <ListView
+                    android:id="@+id/custom_cladding_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配色定制"
+                    android:drawableLeft="@drawable/circle_shape"
+                    android:drawablePadding="@dimen/ui_11"
+                    android:textColor="@color/color_d2ba91"
+                    android:paddingBottom="@dimen/ui_5"
+                    android:textSize="@dimen/ui_height_28"/>
+
+                <TextView
+                    android:id="@+id/text_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/ui_margin_20"
+                    android:textColor="@color/color_aaaaaa"
+                    android:drawableLeft="@drawable/check_mark"
+                    android:drawablePadding="@dimen/ui_11"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_24"
+                    android:text=""/>
+
+                <!--<ListView-->
+                    <!--android:id="@+id/custom_color_list"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--&gt;-->
+                <!--</ListView>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他定制"
+                    android:drawableLeft="@drawable/circle_shape"
+                    android:drawablePadding="@dimen/ui_11"
+                    android:paddingBottom="@dimen/ui_5"
+                    android:textColor="@color/color_d2ba91"
+                    android:textSize="@dimen/ui_height_28"/>
+
+                <ListView
+                    android:id="@+id/custom_other_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                </ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_130"
+            android:layout_marginLeft="@dimen/ui_35"
+            android:layout_marginRight="@dimen/ui_35"
+            android:layout_marginBottom="@dimen/ui_64"
+            android:layout_below="@+id/ll_attribute">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/custom_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/color_d2ba91"
+                    android:textSize="@dimen/font_28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/custom_time"
+                    android:text="  出品"
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/font_28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/productId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_aaaaaa"
+                    android:textSize="@dimen/font_28" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

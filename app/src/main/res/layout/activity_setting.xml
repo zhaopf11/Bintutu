@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <include layout="@layout/title_noright_common" android:id="@+id/include_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_title"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation_bar_bg"
+            android:padding="@dimen/navigation_bar_edit_margin"
+           >
+
+            <TextView
+              style="@style/adapter_order"
+                android:text="消息推送"
+                android:textSize="@dimen/font_30"
+                android:layout_centerVertical="true"
+                />
+
+
+            <TextView
+                android:id="@+id/text_openpush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_26"
+                android:drawablePadding="@dimen/ui_margin_20"
+                android:drawableRight="@drawable/into"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="去开启"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation_bar_bg"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_24"
+            android:text="您可能错过物流、优惠促销等消息"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin"
+            android:paddingBottom="@dimen/ui_margin_20"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation_bar_bg"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_24"
+            android:text="您可以在手机的“设置-通知-宾兔兔”中进行更改"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin"
+            android:paddingBottom="@dimen/navigation_bar_edit_margin"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_choosecity"
+            style="@style/enter_mall_lin"
+            android:visibility="gone"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/text_choosecity"
+                style="@style/enter_mall_text"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_30"
+                android:text="2G/3G显示原图" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_swithcbtn" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_clear"
+            style="@style/enter_mall_lin"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/enter_mall_text"
+                android:textSize="@dimen/font_30"
+                android:text="清除缓存"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:id="@+id/text_size"
+                style="@style/enter_mall_text"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/font_26"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/gray"
+                android:text="0M" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_info_safe"
+            style="@style/mine_main"
+            android:layout_marginTop="@dimen/ui_margin_20"
+            >
+            <TextView
+                style="@style/mine_collection_count"
+                android:text="给我评价"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray3"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/into"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_about"
+            style="@style/mine_main"
+            android:layout_marginBottom="@dimen/ui_margin_20"
+            >
+            <TextView
+                style="@style/mine_collection_count"
+                android:text="关于我们"
+                android:textColor="@color/gray3"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/into"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:textColor="@color/gray"
+        android:background="@color/lin_bg"
+        android:text="退出账号"
+        android:textSize="@dimen/font_30"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

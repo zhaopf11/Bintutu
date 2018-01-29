@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_20"
+        android:background="@color/gray_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:paddingTop="@dimen/ui_40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/mine_collection_count"
+                android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                android:text="金额"
+                android:textColor="@color/gray3" />
+
+
+            <EditText
+                android:id="@+id/edit_sum"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_70"
+                android:background="@drawable/gray_shape_bg"
+                android:hint="请输入金额"
+                android:paddingLeft="@dimen/ui_margin_20"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_24"
+               android:digits="0123456789."/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_40"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <TextView
+            style="@style/mine_collection_count"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+            android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+            android:text="金额"
+            android:textColor="@color/gray3"
+            android:visibility="invisible" />
+
+        <GridView
+            android:id="@+id/grid_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/ui_100"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/ui_margin_20">
+
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+
+        <Button
+            android:id="@+id/btn_recharge"
+            style="@style/btn_bottom"
+            android:text="立即充值" />
+
+    </LinearLayout>
+
+</LinearLayout>  

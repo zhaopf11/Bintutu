@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/title_noright_common" />
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/lin_bg"
+            android:text="重置"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/color_d2ba91"
+            android:text="确定"
+            android:textColor="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include_title"
+        android:layout_above="@+id/lin_bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_designepicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2px"
+                android:background="@color/navigation_bar_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_60"
+                android:paddingTop="@dimen/margin_60">
+
+                <TextView
+                    android:id="@+id/text_designepicture"
+                    android:layout_width="@dimen/ui_150"
+                    android:layout_height="@dimen/ui_150"
+                    android:background="@drawable/dashed_corner_bg"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    style="@style/mine_collection_type"
+                    android:text="上传设计图纸" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/mine_main"
+                android:layout_marginTop="@dimen/ui_margin_20">
+
+                <TextView
+                    style="@style/adapter_order"
+                    android:layout_centerVertical="true"
+                    android:text="选择足型数据"
+                    android:textSize="@dimen/font_30" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_footmessage"
+                    style="@style/right_checkbox"
+                    android:padding="@dimen/ui_margin_20"
+                    android:text="" />
+            </RelativeLayout>
+
+            <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+                android:id="@+id/flowRadioGroupFoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_20"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zhurui.bunnymall.viewutils.MyExpandableListView
+                    android:id="@+id/expandable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none">
+
+                </com.zhurui.bunnymall.viewutils.MyExpandableListView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

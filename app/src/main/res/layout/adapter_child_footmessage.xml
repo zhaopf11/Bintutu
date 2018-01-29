@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+    <View
+        android:id="@+id/lin_center"
+        android:layout_width="@dimen/navigation_bar_edit_margin"
+        android:layout_height="2px"
+        android:background="@color/color_d2ba91"
+        android:layout_marginTop="@dimen/ui_64"
+       />
+    <View
+        android:id="@+id/view_up"
+        android:layout_width="2px"
+        android:layout_height="@dimen/ui_64"
+        android:background="@color/color_d2ba91"
+        />
+    <View
+        android:id="@+id/view_down"
+        android:layout_width="2px"
+        android:layout_height="@dimen/ui_44"
+        android:background="@color/color_d2ba91"
+        android:layout_below="@+id/view_up"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_rightinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ui_88"
+        android:background="@drawable/white_corner_bg"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:layout_toRightOf="@+id/lin_center"
+        >
+        <TextView
+            android:id="@+id/text_peoplename"
+            style="@style/adapter_foot_message_name"
+            android:text="陈先生的足型数据"
+            android:textColor="@color/gray3"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0px"
+            />
+        <ImageView
+            android:id="@+id/img_into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/into"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:id="@+id/text_delete"
+            style="@style/adapter_foot_message_name"
+            android:text="解除"
+            android:textColor="@color/gray"
+            android:layout_toLeftOf="@id/img_into"
+            android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0px"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

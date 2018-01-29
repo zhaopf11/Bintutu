@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2px"
+                android:background="@color/navigation_bar_bg"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    style="@style/adapter_foot_message_name"
+                    android:text="下单时间："
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/text_ordertime"
+                    style="@style/adapter_foot_message_name"
+                    android:text="2017.06.22  16：99" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2px"
+                android:background="@color/navigation_bar_bg"
+                android:paddingBottom="@dimen/navigation_bar_edit_margin"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    style="@style/adapter_foot_message_name"
+                    android:text="订单编号："
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/text_ordernum"
+                    style="@style/adapter_foot_message_name"
+                    android:text="14730895" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_orders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scrollbars="none" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:background="@color/navigation_bar_bg"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    android:id="@+id/text_buyname"
+                    style="@style/adapter_foot_message_name"
+                    android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                    android:text="张耀辉" />
+
+                <TextView
+                    android:id="@+id/text_phonenum"
+                    style="@style/adapter_foot_message_name"
+                    android:text="12222222222" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_address"
+                style="@style/adapter_foot_message_name"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0px"
+                android:background="@color/navigation_bar_bg"
+                android:padding="@dimen/navigation_bar_edit_margin"
+                android:text="上海市普陀区石湾路7弄22号505" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2px"
+                android:background="@color/navigation_bar_bg"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/adapter_foot_message_name"
+                        android:layout_width="wrap_content"
+                        android:text="支付方式："
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        style="@style/adapter_foot_message_name"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/ui_margin_20"
+                        android:text="商品合计："
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        style="@style/adapter_foot_message_name"
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                        android:layout_marginTop="@dimen/ui_margin_20"
+                        android:text="运费："
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_paytype"
+                        style="@style/adapter_foot_message_name"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/text_price"
+                        style="@style/adapter_foot_message_name"
+                        android:layout_marginTop="@dimen/ui_margin_20"
+                        android:text="￥199.00" />
+
+                    <TextView
+                        android:id="@+id/text_fare"
+                        style="@style/adapter_foot_message_name"
+                        android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                        android:layout_marginTop="@dimen/ui_margin_20"
+                        android:text="￥0.00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_88"
+                android:layout_marginTop="2px"
+                android:background="@color/navigation_bar_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    style="@style/adapter_foot_message_name"
+                    android:layout_width="@dimen/ui_160"
+                    android:layout_marginTop="0px"
+                    android:text="实付："
+                    android:textColor="@color/color_d2ba91" />
+
+                <TextView
+                    android:id="@+id/text_pricepay"
+                    style="@style/adapter_foot_message_name"
+                    android:layout_marginTop="0px"
+                    android:text="￥199.00"
+                    android:textColor="@color/color_d2ba91" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_buyinfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_88"
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:background="@color/navigation_bar_bg"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+                <TextView
+                    style="@style/adapter_foot_message_name"
+                    android:layout_width="@dimen/ui_160"
+                    android:layout_marginTop="0px"
+                    android:text="买家留言："
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/text_buyinfo"
+                    style="@style/adapter_foot_message_name"
+                    android:layout_marginTop="0px"
+                    android:text="请发顺丰，谢谢" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>  

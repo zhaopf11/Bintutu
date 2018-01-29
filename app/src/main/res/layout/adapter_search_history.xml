@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/margin_50"
+    android:background="@drawable/gray_corner_bg"
+    android:gravity="center"
+    android:textColor="@color/gray"
+    android:textSize="@dimen/font_24"
+    android:button="@null"
+    android:paddingBottom="13px"
+    android:paddingTop="13px"
+    android:paddingLeft="@dimen/ui_margin_20"
+    android:paddingRight="@dimen/ui_margin_20"
+    android:text="运动鞋">
+
+</RadioButton>

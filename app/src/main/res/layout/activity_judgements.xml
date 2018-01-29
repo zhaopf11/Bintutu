@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_judgements"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_70"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <RadioButton
+            android:id="@+id/radio_alljudgement"
+            style="@style/home_store_radiobutton"
+            android:layout_width="@dimen/ui_120"
+            android:checked="true"
+            android:text="全部(0)"
+            android:textColor="@drawable/radiobutton_textcolorchange_deep" />
+
+        <RadioButton
+            android:id="@+id/radio_judgementimg"
+            style="@style/home_store_radiobutton"
+            android:layout_width="@dimen/ui_120"
+            android:text="有图(0)"
+            android:textColor="@drawable/radiobutton_textcolorchange_deep" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_judgement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

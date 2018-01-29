@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_search_lin_common" />
+
+    <com.zhurui.bunnymall.viewutils.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.zhurui.bunnymall.viewutils.pulltorefresh.pullableview.PullableScrollView
+            android:id="@+id/shoes_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.jude.rollviewpager.RollPagerView
+                        android:id="@+id/sliderLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/ui_560">
+
+                    </com.jude.rollviewpager.RollPagerView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_newproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_60"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                    android:paddingRight="@dimen/navigation_bar_edit_margin"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="@dimen/ui_width_3"
+                        android:layout_height="@dimen/ui_height_28"
+                        android:background="@color/color_d2ba91"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/competitive_recommand"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/font_30" />
+                </RelativeLayout>
+
+                <!--加一个RelativeLayout   可以让RecyclerView不滑动-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_newrecommand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/ui_30"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_guess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_60"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                    android:paddingRight="@dimen/navigation_bar_edit_margin"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="@dimen/ui_width_3"
+                        android:layout_height="@dimen/ui_height_28"
+                        android:background="@color/color_d2ba91"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/ui_margin_20"
+                        android:text="@string/hotsell_recommand"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/font_30" />
+                </RelativeLayout>
+
+                <com.zhurui.bunnymall.viewutils.GridViewInScrollView
+                    android:id="@+id/grid_guessrecommand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_margin_20"
+                    android:horizontalSpacing="@dimen/ui_margin_20"
+                    android:numColumns="2"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/ui_margin_20"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </com.zhurui.bunnymall.viewutils.pulltorefresh.pullableview.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.zhurui.bunnymall.viewutils.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

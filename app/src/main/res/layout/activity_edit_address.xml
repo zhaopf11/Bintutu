@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/address_edit"
+            android:hint="姓名" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            style="@style/address_edit"
+            android:hint="手机号码"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/edit_province"
+            style="@style/address_edit"
+            android:gravity="center_vertical"
+            android:hint="省份、城市、区县" />
+
+        <EditText
+            android:id="@+id/edit_addressdetail"
+            style="@style/address_edit"
+            android:hint="详细地址，如街道、楼牌号等" />
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/checkbox_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/selector_checkbox"
+        android:drawablePadding="@dimen/ui_margin_20"
+        android:button="@null"
+        android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+        android:text="设为默认地址"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_30"/>
+
+
+</LinearLayout>

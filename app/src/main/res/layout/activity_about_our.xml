@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title_noright_common" android:id="@+id/include_title"/>
+
+    <LinearLayout
+        android:id="@+id/linlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/include_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="@dimen/ui_180"
+            android:layout_height="@dimen/ui_180"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageView2"
+            />
+        <TextView
+            android:id="@+id/text_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_20"
+            android:text="安兔兔V1.0"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linlay"
+        android:layout_margin="@dimen/ui_5"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宾兔兔专注于发布新品鞋类的电商平台"
+            android:textSize="@dimen/font_24"
+            android:padding="5dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="使用更智能化的定制鞋类选品算法，导航精准，品类标准完善"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="高度自定义的服务设定。"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="3D扫描设计的新科技量脚体验，上门服务排队机制，"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="以及覆盖全球各大城市、县镇、商圈、社区的"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="专业上门服务团队。"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="成为用户首选的鞋类购买和定制平台。"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_ordernum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+        <TextView
+            android:id="@+id/text_ordernumstr"
+            style="@style/foot_message_detaile_text.order"
+            android:text="订单编号：" />
+
+        <TextView
+            android:id="@+id/text_ordernum"
+            style="@style/foot_message_detaile_text.order"
+            android:layout_marginRight="@dimen/ui_5"
+            android:layout_toLeftOf="@+id/anticlockwise"
+            android:layout_toRightOf="@+id/text_ordernumstr"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="8778687888888" />
+
+        <com.zhurui.bunnymall.viewutils.Anticlockwise
+            android:id="@+id/anticlockwise"
+            style="@style/foot_message_detaile_text.order"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/ui_30"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_26"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/ui_30"
+            android:src="@drawable/order_delete"/>
+
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/gray_bg" />-->
+
+    <LinearLayout
+        android:id="@+id/lin_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="1px"
+        android:paddingBottom="@dimen/ui_margin_20"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:paddingTop="@dimen/ui_margin_20">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/ui_250"
+            android:layout_height="@dimen/ui_250"
+            android:src="@drawable/product1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_producttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/ui_margin_20"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="明星同款一字扣简约女士凉鞋舒适清爽凉鞋"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/font_26" />
+
+
+                <TextView
+                    android:id="@+id/text_productcount"
+                    style="@style/adapter_order"
+                    android:layout_alignBottom="@+id/text_producttitle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="X1" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_margin_20">
+
+                <TextView
+                    android:id="@+id/text_sigle_price"
+                    style="@style/adapter_order"
+                    android:text="¥1999.00"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/text_state"
+                    style="@style/adapter_order"
+                    android:layout_alignParentRight="true"
+                    android:text="待支付"
+                    android:textColor="@color/color_d2ba91" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_foottype"
+        style="@style/MatchWrap"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/ui_30"
+        android:paddingRight="@dimen/ui_30">
+
+        <include layout="@layout/include_cart_check_attr" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_bg" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+
+        <TextView
+            android:id="@+id/text_price"
+            style="@style/foot_message_detaile_text.order"
+            android:text="实付：199.00" />
+
+
+        <TextView
+            android:id="@+id/text_rightbtn"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/margin_50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+            android:background="@drawable/orange_corner_bg"
+            android:gravity="center"
+            android:text="付款"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_24" />
+
+
+        <TextView
+            android:id="@+id/text_leftbtn"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/text_rightbtn"
+            android:background="@drawable/gray_deep_corner_bg"
+            android:gravity="center"
+            android:text="联系卖家"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_24" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

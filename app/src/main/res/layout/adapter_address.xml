@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:padding="@dimen/navigation_bar_edit_margin">
+
+    <LinearLayout
+        android:id="@+id/lin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_name"
+             style="@style/adapter_order"
+            android:textSize="@dimen/font_30"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/text_normal"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/ui_40"
+            android:background="@drawable/orange_corner_bg"
+            android:layout_marginTop="@dimen/ui_margin_20"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_24"
+            android:text="默认"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/address_edit"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingTop="@dimen/navigation_bar_edit_hight"
+        android:paddingBottom="@dimen/navigation_bar_edit_hight"
+       />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_delete"
+        android:layout_toRightOf="@+id/lin_left"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_telnum"
+            style="@style/adapter_order"
+            android:textSize="@dimen/font_30"
+            android:text=""
+            android:layout_marginBottom="@dimen/navigation_bar_edit_margin"/>
+
+        <TextView
+            android:id="@+id/text_address"
+            style="@style/adapter_order"
+            android:textColor="@color/gray"
+            android:text=""
+           />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/order_delete"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingTop="@dimen/navigation_bar_edit_hight"
+        android:paddingBottom="@dimen/navigation_bar_edit_hight"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/img_edit"
+        android:layout_toStartOf="@+id/img_edit" />
+
+
+</RelativeLayout>

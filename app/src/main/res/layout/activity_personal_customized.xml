@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical"
+    tools:context="com.zhurui.bunnymall.home.activity.PersonalCustomizedActivity"
+   >
+    <include layout="@layout/title_search_textview_righttext_common" />
+    <com.zhurui.bunnymall.viewutils.MyDropDownMenu
+        android:id="@+id/myDropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </com.zhurui.bunnymall.viewutils.MyDropDownMenu>
+
+    <com.zhurui.bunnymall.viewutils.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.zhurui.bunnymall.viewutils.pulltorefresh.pullableview.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <com.zhurui.bunnymall.viewutils.GridViewInScrollView
+                android:id="@+id/grid_customized"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:layout_marginBottom="@dimen/ui_margin_20"
+                android:verticalSpacing="@dimen/ui_margin_20"
+                android:horizontalSpacing="@dimen/navigation_bar_margin"
+                android:scrollbars="none"
+                android:numColumns="2"></com.zhurui.bunnymall.viewutils.GridViewInScrollView>
+
+
+        </com.zhurui.bunnymall.viewutils.pulltorefresh.pullableview.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.zhurui.bunnymall.viewutils.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

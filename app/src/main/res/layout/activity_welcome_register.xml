@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_first_regist">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:layout_marginTop="@dimen/ui_120"
+            android:layout_marginRight="@dimen/ui_90"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:src="@drawable/phone_number" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="14"
+                android:layout_marginLeft="@dimen/ui_30"
+                android:hint="请输入手机号"
+                android:textColorHint="@color/gray"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingBottom="2dp"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:layout_marginRight="@dimen/ui_90"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="14"
+                android:layout_marginLeft="@dimen/ui_30"
+                android:background="@drawable/gray_line"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:layout_marginTop="@dimen/ui_30"
+            android:layout_marginRight="@dimen/ui_90"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:src="@drawable/identifying_code" />
+
+            <EditText
+                android:id="@+id/edit_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_marginLeft="@dimen/ui_30"
+                android:hint="请输入验证码"
+                android:textColorHint="@color/gray"
+                android:inputType="number"
+                android:maxLines="1"
+                android:background="@null"
+                android:paddingBottom="2dp"
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:textSize="@dimen/font_26" />
+
+            <TextView
+                android:id="@+id/text_sendcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_26"
+                android:layout_marginLeft="@dimen/ui_30"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="获取验证码"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:layout_marginRight="@dimen/ui_90"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="10"
+                android:layout_marginLeft="@dimen/ui_30"
+                android:background="@drawable/gray_line"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="6"
+                android:layout_marginLeft="@dimen/ui_30"
+                android:background="@drawable/champagne_line"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_88"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:layout_marginRight="@dimen/ui_90"
+            android:layout_marginTop="@dimen/margin_50"
+            android:background="@drawable/modify_button_bg"
+            android:text="确定"
+            android:textColor="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/to_skip"
+        android:layout_width="@dimen/ui_90"
+        android:layout_height="@dimen/margin_50"
+        android:background="@color/gray"
+        android:layout_marginRight="@dimen/ui_30"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/ui_30"
+        android:text="跳过"
+        android:textColor="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_24" />
+</RelativeLayout>

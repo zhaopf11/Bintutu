@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/ui_100"
+        android:layout_marginRight="@dimen/ui_100"
+        android:background="@drawable/white_corner_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_230"
+            android:gravity="center_vertical"
+            android:text="自设计定制是根据用户上传的自设计定制文档进行来样定制的。"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray_bg" />
+
+
+        <TextView
+            android:id="@+id/text_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_88"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/font_orange"
+            android:textSize="@dimen/font_30" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

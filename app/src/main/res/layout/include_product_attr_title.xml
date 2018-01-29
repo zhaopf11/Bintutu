@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/margin_280"
+            android:layout_height="@dimen/margin_280" />
+
+        <RelativeLayout
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+            android:layout_marginTop="@dimen/ui_100">
+
+            <TextView
+                android:id="@+id/text_product_name"
+                style="@style/WrapWrap"
+                android:layout_alignRight="@+id/text_product"
+                android:layout_alignLeft="@+id/text_product"
+                android:layout_below="@+id/text_product"
+                android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+                android:maxLines="2"
+                android:text="（法国芭蕾）"
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_30" />
+
+            <TextView
+                android:id="@+id/text_product"
+                style="@style/WrapWrap"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/check_attr"
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_60" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_img_close"
+            style="@style/WrapWrap">
+
+            <ImageView
+                android:id="@+id/img_close"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/navigation_bar_edit_margin"
+                android:paddingRight="@dimen/navigation_bar_edit_margin"
+                android:paddingTop="@dimen/navigation_bar_edit_margin"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

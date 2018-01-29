@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ui_240"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_classify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_210"
+        android:src="@drawable/classify1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/text_classifyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/font_24"
+        android:text="凉鞋"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

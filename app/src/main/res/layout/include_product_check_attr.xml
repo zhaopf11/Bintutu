@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_check_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:layout_marginLeft="@dimen/ui_30"
+        android:layout_marginRight="@dimen/ui_30"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选定材料:"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30"/>
+
+        <GridView
+            android:id="@+id/material_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_30"
+            android:horizontalSpacing="@dimen/ui_margin_20"
+            android:verticalSpacing="@dimen/ui_margin_20"
+            android:numColumns="3">
+
+        </GridView>
+
+        <com.zhurui.bunnymall.viewutils.UnderLineTextView
+            android:id="@+id/check_material_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_30"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_30"
+            android:lineSpacingExtra="@dimen/ui_margin_20"
+            android:paddingBottom="@dimen/ui_5"
+            app:underlineWidth="1dp"
+            app:underlineColor="@color/color_d2ba91"
+            android:text="真皮  平跟  山羊底"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_personality_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:layout_marginLeft="@dimen/ui_30"
+        android:layout_marginRight="@dimen/ui_30"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个性要求:"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30"/>
+
+        <GridView
+            android:id="@+id/gexing_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_30"
+            android:horizontalSpacing="@dimen/ui_margin_20"
+            android:verticalSpacing="@dimen/ui_margin_20"
+            android:numColumns="3"/>
+
+        <com.zhurui.bunnymall.viewutils.UnderLineTextView
+            android:id="@+id/personality_request_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_30"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_30"
+            android:lineSpacingExtra="@dimen/ui_margin_20"
+            android:paddingBottom="@dimen/ui_5"
+            app:underlineWidth="1dp"
+            app:underlineColor="@color/color_d2ba91"
+            android:text="真皮  平跟  山羊底"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_customize_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:layout_marginLeft="@dimen/ui_30"
+        android:layout_marginRight="@dimen/ui_30"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定制尺码:"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_d2ba91"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/ui_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ui_40"
+                android:textColor="@color/navigation_bar_bg"
+                android:textSize="@dimen/font_24"
+                android:gravity="center"
+                android:text="根据  "/>
+
+            <TextView
+                android:id="@+id/customize_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ui_40"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_24"
+                android:gravity="center"
+                android:text="真皮"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ui_40"
+                android:textSize="@dimen/font_24"
+                android:textColor="@color/navigation_bar_bg"
+                android:gravity="center"
+                android:text="定制"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_foot_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:layout_marginLeft="@dimen/ui_30"
+        android:layout_marginRight="@dimen/ui_30"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="足型备注:"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30"/>
+
+        <com.zhurui.bunnymall.viewutils.UnderLineTextView
+            android:id="@+id/foot_desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_30"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_24"
+            android:lineSpacingExtra="@dimen/ui_margin_20"
+            android:paddingBottom="8dp"
+            app:underlineWidth="1dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:underlineColor="@color/color_d2ba91"
+            android:text="真皮"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical"
+    tools:context="com.zhurui.bunnymall.home.activity.StoreHomeActivity">
+
+
+    <include layout="@layout/title_search_lin_common" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/ui_40"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:paddingTop="@dimen/ui_40">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_store"
+            android:layout_width="@dimen/ui_100"
+            android:layout_height="@dimen/ui_100"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gray_shape_bg"
+            />
+
+        <LinearLayout
+            android:id="@+id/lin_storename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_store"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/ui_margin_20"
+            android:paddingTop="@dimen/navigation_bar_edit_margin">
+
+            <TextView
+                android:id="@+id/text_storename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_20"
+                android:text=""
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_26" />
+
+            <LinearLayout
+                android:id="@+id/lin_diamond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_diamond1"
+                    style="@style/store_home_diamond" />
+
+                <ImageView
+                    android:id="@+id/img_diamond2"
+                    style="@style/store_home_diamond" />
+
+                <ImageView
+                    android:id="@+id/img_diamond3"
+                    style="@style/store_home_diamond" />
+                <ImageView
+                    android:id="@+id/img_diamond4"
+                    style="@style/store_home_diamond" />
+                <ImageView
+                    android:id="@+id/img_diamond5"
+                    style="@style/store_home_diamond" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_follow"
+            android:layout_width="@dimen/ui_100"
+            android:layout_height="@dimen/margin_50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/orange_corner_bg"
+            android:gravity="center"
+            android:text="@string/follow"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_26" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ui_margin_20"
+            android:layout_toLeftOf="@+id/text_follow"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_followcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_5"
+                android:text="关注数"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_20" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_store"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_storehome"
+            style="@style/home_store_radiobutton"
+            android:checked="true"
+            android:text="@string/store_home" />
+
+        <RadioButton
+            android:id="@+id/radio_allproduct"
+            style="@style/home_store_radiobutton"
+            android:text="@string/store_allproduct" />
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_newproductgrounding"-->
+            <!--style="@style/home_store_radiobutton"-->
+            <!--android:text="@string/store_new" />-->
+    </RadioGroup>
+
+
+    <ScrollView
+        android:id="@+id/lin_storehome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:scrollbars="none">
+
+        <include layout="@layout/fragment_store_home" />
+    </ScrollView>
+
+
+    <com.zhurui.bunnymall.viewutils.MyDropDownMenu
+        android:id="@+id/myDropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+    </com.zhurui.bunnymall.viewutils.MyDropDownMenu>
+
+    <GridView
+        android:id="@+id/grid_allproduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myDropDownMenu"
+        android:numColumns="2" />
+
+</LinearLayout>

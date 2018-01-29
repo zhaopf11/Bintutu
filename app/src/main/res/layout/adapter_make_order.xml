@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <TextView
+            android:id="@+id/checkbox_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ui_70"
+            android:drawableLeft="@drawable/store_order"
+            android:drawablePadding="@dimen/ui_margin_20"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin"
+            android:text="爱美Go定制"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_30" />
+
+        <TextView
+            android:id="@+id/text_orderstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_30"
+            android:layout_centerVertical="true"
+            android:text="待付款"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/navigation_bar_edit_margin">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_product"
+            android:layout_width="@dimen/ui_250"
+            android:layout_height="@dimen/ui_250"
+            android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+            android:src="@drawable/product1" />
+
+        <LinearLayout
+            android:id="@+id/lin_produce_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_productintroduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="明星同款一字扣简约女士凉鞋舒适清爽凉鞋"
+                    android:textColor="@color/gray3"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/ui_margin_20"
+                    android:textSize="@dimen/font_26" />
+
+                <TextView
+                    android:id="@+id/text_count"
+                    style="@style/adapter_order"
+                    android:layout_alignBottom="@+id/text_producttitle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="X1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/ui_margin_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_price"
+                    style="@style/adapter_order"
+                    android:textColor="@color/gray"
+                    android:text="¥1999.00" />
+                />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_foottype"
+        style="@style/MatchWrap"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/ui_30"
+        android:paddingRight="@dimen/ui_30">
+
+        <include
+            layout="@layout/include_cart_check_attr"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:paddingBottom="@dimen/ui_margin_20"
+       android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/return_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_26"
+            android:gravity="center"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/return_right"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/margin_50"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gray_deep_corner_bg"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_26"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="退货"/>
+
+        <TextView
+            android:id="@+id/return_center"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/gray_deep_corner_bg"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_26"
+            android:gravity="center"
+            android:text="发货"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/return_right"
+            android:layout_marginRight="@dimen/navigation_bar_edit_margin"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="2px"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/text_left"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/gray_corner_bg1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_26"
+            android:gravity="center"
+            android:text="退货"/>
+
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/margin_50"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gray_deep_corner_bg"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_26"
+            android:gravity="center"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/text_center"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/gray_deep_corner_bg"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_26"
+            android:gravity="center"
+            android:text=""
+            android:layout_toLeftOf="@+id/text_right"
+            android:layout_marginRight="@dimen/navigation_bar_edit_margin"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhurui.bunnymall.mine.activity.ModifyPersonalInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+    <include layout="@layout/title_noright_common"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:paddingTop="@dimen/margin_50"
+        android:paddingBottom="@dimen/margin_50"
+        android:layout_marginBottom="@dimen/ui_margin_20"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.zhurui.bunnymall.viewutils.CircleImageView
+            android:id="@+id/circle_head"
+            android:layout_width="@dimen/ui_140"
+            android:layout_height="@dimen/ui_140"
+            android:src="@drawable/head_normal"
+           android:layout_marginBottom="@dimen/ui_margin_20"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"
+            android:text="点击修改头像"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/modify_personal_info">
+
+        <TextView
+            style="@style/adapter_cart_price"
+            android:text="@string/nickname"
+            android:textSize="@dimen/font_30"
+            android:layout_marginRight="@dimen/ui_130"/>
+
+        <EditText
+            android:id="@+id/edit_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30"
+            android:textColor="@color/gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"
+            android:maxLength="6"
+            android:hint="请输入昵称"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/modify_personal_info">
+
+        <TextView
+            style="@style/adapter_cart_price"
+            android:text="姓名"
+            android:textSize="@dimen/font_30"
+            android:layout_marginRight="@dimen/ui_130"/>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30"
+            android:textColor="@color/gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入姓名"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/modify_personal_info">
+
+        <TextView
+            style="@style/adapter_cart_price"
+            android:text="@string/sex"
+            android:textSize="@dimen/font_30"
+            android:layout_marginRight="@dimen/ui_130"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/radiobtn_man"
+                style="@style/modify_personal_radiobutton"
+                android:text="男"
+                android:checked="true"
+                android:layout_marginRight="@dimen/margin_60"
+                />
+
+            <RadioButton
+                android:id="@+id/radiobtn_woman"
+                style="@style/modify_personal_radiobutton"
+                android:text="女"
+                />
+
+            </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_birthday"
+        style="@style/modify_personal_info">
+
+        <TextView
+            style="@style/adapter_cart_price"
+            android:text="生日"
+            android:textSize="@dimen/font_30"
+            android:layout_marginRight="@dimen/ui_130"/>
+
+        <TextView
+            android:id="@+id/edit_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30"
+            android:textColor="@color/gray"
+            android:hint="请选择生日" />
+
+    </LinearLayout>
+
+</LinearLayout>

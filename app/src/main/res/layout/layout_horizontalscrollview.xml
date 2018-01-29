@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <RadioGroup
+            android:id="@+id/rg_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.zhurui.bunnymall.viewutils.SecondLineRadioButton
+                android:id="@+id/secondline1"
+                android:layout_width="@dimen/ui_144"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_bg_secondline"
+                android:button="@null"
+                app:first_size="@dimen/font_26"
+                app:first_text="6月27日"
+                app:second_size="@dimen/font_24"
+                app:second_text="已结束"
+                app:select_text_color="@color/navigation_bar_bg"
+                app:text_color="@color/gray"
+                android:clickable="true"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
+
+            <com.zhurui.bunnymall.viewutils.SecondLineRadioButton
+                android:id="@+id/secondline2"
+                android:layout_width="@dimen/ui_144"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_bg_secondline"
+                android:button="@null"
+                app:first_size="@dimen/font_26"
+                app:first_text="6月27日"
+                app:second_size="@dimen/font_24"
+                app:second_text="已结束"
+                app:select_text_color="@color/navigation_bar_bg"
+                app:text_color="@color/gray"
+                android:clickable="true"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
+
+            <com.zhurui.bunnymall.viewutils.SecondLineRadioButton
+                android:id="@+id/secondline3"
+                android:layout_width="@dimen/ui_144"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_bg_secondline"
+                android:button="@null"
+                app:first_size="@dimen/font_26"
+                app:first_text="6月27日"
+                app:second_size="@dimen/font_24"
+                app:second_text="已结束"
+                app:select_text_color="@color/navigation_bar_bg"
+                app:text_color="@color/gray"
+                android:clickable="true"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
+
+
+            <com.zhurui.bunnymall.viewutils.SecondLineRadioButton
+                android:id="@+id/secondline4"
+                android:layout_width="@dimen/ui_144"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_bg_secondline"
+                android:button="@null"
+                app:first_size="@dimen/font_26"
+                app:first_text="6月27日"
+                app:second_size="@dimen/font_24"
+                app:second_text="已结束"
+                app:select_text_color="@color/navigation_bar_bg"
+                app:text_color="@color/gray"
+                android:clickable="true"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
+
+            <com.zhurui.bunnymall.viewutils.SecondLineRadioButton
+                android:id="@+id/secondline5"
+                android:layout_width="@dimen/ui_144"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_bg_secondline"
+                android:button="@null"
+                app:first_size="@dimen/font_26"
+                app:first_text="6月27日"
+                app:second_size="@dimen/font_24"
+                app:second_text="已结束"
+                app:select_text_color="@color/navigation_bar_bg"
+                app:text_color="@color/gray"
+                android:clickable="true"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
+
+            <com.zhurui.bunnymall.viewutils.SecondLineRadioButton
+                android:id="@+id/secondline6"
+                android:layout_width="@dimen/ui_144"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_bg_secondline"
+                android:button="@null"
+                app:first_size="@dimen/font_26"
+                app:first_text="6月27日"
+                app:second_size="@dimen/font_24"
+                app:second_text="已结束"
+                app:select_text_color="@color/navigation_bar_bg"
+                app:text_color="@color/gray"
+                android:clickable="true"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
+
+            <com.zhurui.bunnymall.viewutils.SecondLineRadioButton
+                android:id="@+id/secondline7"
+                android:layout_width="@dimen/ui_144"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radiobutton_bg_secondline"
+                android:button="@null"
+                app:first_size="@dimen/font_26"
+                app:first_text="6月27日"
+                app:second_size="@dimen/font_24"
+                app:second_text="已结束"
+                app:select_text_color="@color/navigation_bar_bg"
+                app:text_color="@color/gray"
+                android:clickable="true"
+                android:visibility="gone">
+
+            </com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
+        </RadioGroup>
+    </HorizontalScrollView>
+</LinearLayout>

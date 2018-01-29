@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ui_80"
+    android:background="@color/navigation_bar_bg"
+    android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+
+
+    <CheckBox
+        android:id="@+id/checkbox_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/selector_checkbox"
+        android:background="@null"
+        android:button="@null"
+        android:textSize="@dimen/font_26"
+        android:textColor="@color/gray"
+        android:layout_centerVertical="true"
+        android:text="已选"
+        android:drawablePadding="@dimen/navigation_bar_margin"/>
+
+
+
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="@dimen/ui_200"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/color_d2ba91"
+        android:textColor="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_30"
+        android:text="删除所选"/>
+
+
+
+
+
+</RelativeLayout>

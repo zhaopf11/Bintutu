@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+    android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+    android:layout_marginTop="@dimen/ui_30"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        style="@style/address_edit.foot"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名:"
+            android:textSize="@dimen/font_28"
+            android:textColor="@color/gray3"/>
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/address_edit.foot"
+            android:hint="请输入姓名"
+            android:textSize="@dimen/font_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        style="@style/address_edit.foot"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓别:"
+            android:textSize="@dimen/font_28"
+            android:textColor="@color/gray3"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ui_margin_20">
+
+            <RadioButton
+                android:id="@+id/radiobtn_man"
+                style="@style/modify_personal_radiobutton"
+                android:text="男"
+                android:textSize="@dimen/font_24"
+                android:checked="true"
+                android:layout_marginRight="@dimen/margin_60"
+                />
+            <RadioButton
+                android:id="@+id/radiobtn_woman"
+                style="@style/modify_personal_radiobutton"
+                android:text="女"
+                android:textSize="@dimen/font_24"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/address_edit.foot"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身高(cm):"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/font_28"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/edit_height"
+            style="@style/address_edit.foot"
+            android:hint="请输入身高"
+            android:inputType="number"
+            android:textSize="@dimen/font_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/address_edit.foot"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体重(kg):"
+            android:textSize="@dimen/font_28"
+            android:textColor="@color/gray3"/>
+
+        <EditText
+            android:id="@+id/edit_weight"
+            style="@style/address_edit.foot"
+            android:hint="请输入体重"
+            android:inputType="number"
+            android:textSize="@dimen/font_24"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/address_edit.foot"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生日:"
+            android:textSize="@dimen/font_28"
+            android:textColor="@color/gray3"/>
+
+        <EditText
+            android:id="@+id/edit_birthday"
+            style="@style/address_edit.foot"
+            android:textSize="@dimen/font_24"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:hint="请选择生日"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/address_edit.foot"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鞋码:"
+            android:textSize="@dimen/font_28"
+            android:textColor="@color/gray3"/>
+
+        <EditText
+            android:id="@+id/edit_shoesize"
+            style="@style/address_edit.foot"
+            android:textSize="@dimen/font_24"
+            android:inputType="number"
+            android:hint="请输入鞋码"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/address_edit.foot"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特殊脚型描述:"
+            android:textSize="@dimen/font_28"
+            android:textColor="@color/gray3"/>
+
+        <EditText
+            android:id="@+id/edit_footdesc"
+            style="@style/address_edit.foot"
+            android:textSize="@dimen/font_24"
+            android:maxLength="20"
+            android:hint="请输入情况" />
+    </LinearLayout>
+
+</LinearLayout>

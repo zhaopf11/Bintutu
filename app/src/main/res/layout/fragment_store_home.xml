@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/img_storehome"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_340"
+        android:src="@drawable/banner1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_370"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/lin_specialprice"
+            style="@style/home_store_specialproduct"
+            android:layout_marginRight="@dimen/ui_5"
+            android:background="@drawable/specialprice">
+            <!--
+                        <TextView
+                            style="@style/home_store_specialproduct_text"
+                            android:text="特价商品" />
+
+                        <View
+                            android:layout_width="@dimen/font_48"
+                            android:layout_height="@dimen/ui_5"
+                            android:layout_marginBottom="@dimen/ui_margin_20"
+                            android:background="@color/navigation_bar_bg" />
+
+                        <TextView
+                            style="@style/home_store_specialproduct_text"
+                            android:text="Promotion Items" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_hotsales"
+            style="@style/home_store_specialproduct"
+            android:layout_marginLeft="@dimen/ui_5"
+            android:background="@drawable/hot">
+
+            <!--    <TextView
+                    style="@style/home_store_specialproduct_text"
+                    android:text="热卖商品" />
+
+                <View
+                    android:layout_width="@dimen/font_48"
+                    android:layout_height="@dimen/ui_5"
+                    android:layout_marginBottom="@dimen/ui_margin_20"
+                    android:background="@color/navigation_bar_bg" />
+
+                <TextView
+                    style="@style/home_store_specialproduct_text"
+                    android:text="Hot Sales Items" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_60"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/ui_width_3"
+                android:layout_height="@dimen/ui_height_28"
+                android:background="@color/color_d2ba91" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/ui_margin_20"
+                android:text="@string/hot_product"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_30" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_newrecommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <include layout="@layout/more_rightflag" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_newrecommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:scrollbars="none" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_hotproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_60"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="@dimen/ui_width_3"
+                android:layout_height="@dimen/ui_height_28"
+                android:background="@color/color_d2ba91" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/ui_margin_20"
+                android:text="@string/hot_personal"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/font_30" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_hotrecommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <include layout="@layout/more_rightflag" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.zhurui.bunnymall.viewutils.GridViewInScrollView
+        android:id="@+id/recycler_hotrecommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:horizontalSpacing="@dimen/ui_margin_20"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/ui_margin_20" />
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@color/navigation_bar_bg">
+
+    <TextView
+        android:id="@+id/text_typename"
+        style="@style/adapter_order"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/circle_shape"
+        android:drawablePadding="@dimen/ui_5"
+        android:layout_marginLeft="@dimen/ui_30"
+        android:text="选择足型数据"
+        android:textSize="@dimen/font_32" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+    <include layout="@layout/title_noright_common" />
+
+    <RelativeLayout
+        android:id="@+id/rel_modifypass"
+        style="@style/mine_main"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        >
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:text="@string/modify_pass"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_modifyphone"
+        style="@style/mine_main"
+        >
+        <TextView
+            android:id="@+id/text_modifyaccount"
+            style="@style/mine_collection_count.main"
+            android:layout_centerVertical="true"
+            android:text="@string/modify_phonenum"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/into"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>  

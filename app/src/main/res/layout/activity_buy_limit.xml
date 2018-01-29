@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.zhurui.bunnymall.home.activity.BuyLimitActivity">
+
+    <include layout="@layout/title_noright_common" />
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--app:tabBackground="@drawable/tab_background"-->
+    <!--app:tabGravity="center"-->
+    <!--app:tabIndicatorColor="@color/fragment_money_red"-->
+    <!--app:tabIndicatorHeight="0dp"-->
+    <!--app:tabMinWidth="98dp"-->
+    <!--app:tabMode="scrollable"-->
+    <!--app:tabPaddingBottom="3dp"-->
+    <!--app:tabSelectedTextColor="@color/white"-->
+    <!--app:tabTextAppearance="@style/TabLayoutTextStyle"-->
+    <!--app:tabTextColor="@color/white" />-->
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tabLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/ui_100"-->
+    <!--app:tabBackground="@drawable/tab_bg"-->
+    <!--app:tabGravity="center"-->
+    <!--app:tabSelectedTextColor="@color/navigation_bar_bg"-->
+    <!--app:tabTextColor="@color/gray"-->
+    <!--app:tabMode="scrollable"-->
+
+    <!--&gt;-->
+
+    <!--</android.support.design.widget.TabLayout>-->
+
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/viewPager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<include layout="@layout/time_base" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/img_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_260"
+            android:layout_below="@+id/lin_hadmain"
+            android:visibility="gone"
+            android:layout_marginTop="-15dp"
+          >
+        </com.jude.rollviewpager.RollPagerView>
+        <LinearLayout
+            android:id="@+id/lin_hadmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zhurui.bunnymall.viewutils.MyHorizontalScrollView
+                android:id="@+id/horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="30">
+            </com.zhurui.bunnymall.viewutils.MyHorizontalScrollView>
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/ui_115"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/select_bg" />-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/lin_hadmain"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/ui_100">-->
+
+        <!--<com.zhurui.bunnymall.viewutils.HorizontalselectedView-->
+        <!--android:id="@+id/hd_main"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="@dimen/ui_100"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_weight="30"-->
+        <!--app:HorizontalselectedSecondTextSize="@dimen/font_24"-->
+        <!--app:HorizontalselectedViewSeesize="5"-->
+        <!--app:HorizontalselectedViewSelectedTextColor="@color/navigation_bar_bg"-->
+        <!--app:HorizontalselectedViewSelectedTextSize="@dimen/font_26"-->
+        <!--app:HorizontalselectedViewTextColor="@color/gray"-->
+        <!--app:HorizontalselectedViewTextSize="@dimen/font_26" />-->
+        <!--</LinearLayout>-->
+
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rel_chronometer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/navigation_bar_bg"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="@dimen/navigation_bar_edit_margin"-->
+        <!--android:paddingRight="@dimen/navigation_bar_edit_margin">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginBottom="@dimen/ui_margin_20"-->
+            <!--android:layout_marginTop="@dimen/ui_40">-->
+
+            <!--<View-->
+                <!--android:layout_width="@dimen/ui_width_3"-->
+                <!--android:layout_height="@dimen/ui_height_28"-->
+                <!--android:background="@color/font_orange" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/ui_margin_20"-->
+                <!--android:text="@string/shop_time"-->
+                <!--android:textColor="@color/font_orange"-->
+                <!--android:textSize="@dimen/font_26" />-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/lin_newrecommand"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/to_end"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="@dimen/font_26" />-->
+
+            <!--<com.zhurui.bunnymall.viewutils.Anticlockwise-->
+                <!--android:id="@+id/chronometer"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/ui_5"-->
+                <!--android:textColor="@color/font_orange"-->
+                <!--android:textSize="@dimen/font_26" />-->
+        <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

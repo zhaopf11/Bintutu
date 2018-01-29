@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_bg" />
+
+    <EditText
+        android:id="@+id/edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@drawable/bottom_line"
+        android:hint="请输入手机号"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_24" />
+
+
+    <RelativeLayout
+        style="@style/enter_mall_lin"
+        android:background="@drawable/bottom_line"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/text_sendcode"
+            android:background="@drawable/bottom_line"
+            android:hint="请输入验证码"
+            android:maxLines="1"
+            android:focusable="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_24"
+            android:inputType="number"/>
+
+
+        <TextView
+            android:id="@+id/text_sendcode"
+            android:layout_width="@dimen/ui_160"
+            android:layout_height="@dimen/margin_50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/orange_corner_bg"
+            android:gravity="center"
+            android:text="@string/send_code"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_26" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@drawable/bottom_line"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_24"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ui_100"
+        android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin"
+        android:text="密码可使用英文、数字，字数限制6-16位字符"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_24" />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+        android:background="@drawable/modify_button_bg"
+        android:text="确定"
+        android:textColor="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_30" />
+
+
+    <LinearLayout
+        android:id="@+id/lin_infomind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击[确定]表示同意"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_26" />
+
+        <TextView
+            android:id="@+id/text_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《宾兔兔平台服务协议》"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_26" />
+    </LinearLayout>
+
+</LinearLayout>  

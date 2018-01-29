@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_submit"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ "
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/text_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_90"
+            android:background="@drawable/shadow"
+            android:gravity="center_vertical"
+            android:text="1990.00"
+            android:textColor="@color/color_d2ba91"
+            android:textSize="@dimen/font_30" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/ui_220"
+        android:layout_height="@dimen/ui_90"
+        android:layout_alignParentRight="true"
+        android:background="@color/color_d2ba91"
+        android:text="确认定制"
+        android:textColor="@color/navigation_bar_bg"
+        android:textSize="@dimen/font_30" />
+</RelativeLayout>

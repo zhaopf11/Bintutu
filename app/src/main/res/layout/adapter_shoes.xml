@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ui_355"
+    android:layout_marginTop="@dimen/ui_margin_20"
+    android:background="@color/navigation_bar_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_child_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/shoes_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_355"
+            android:scaleType="fitXY"
+            android:background="@drawable/home_store_normal" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_30"
+            android:button="@null"
+            android:maxLines="2"
+            android:textColor="@color/navigation_bar_bg"
+            android:background="@color/translucence"
+            android:paddingLeft="@dimen/ui_30"
+            android:paddingTop="@dimen/ui_margin_20"
+            android:paddingBottom="@dimen/ui_margin_20"
+            android:layout_alignParentBottom="true"
+            android:text="干嘛">
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

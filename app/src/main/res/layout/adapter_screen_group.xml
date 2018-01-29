@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/screen_dialog_lin">
+
+    <TextView
+        android:id="@+id/text_group"
+        style="@style/foot_message_detaile_text"
+        android:layout_centerVertical="true"
+        android:text="发货地址"
+        android:textSize="@dimen/font_30" />
+
+    <CheckBox
+        android:id="@+id/checkbox_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/font_20"
+        android:layout_alignParentRight="true"
+        android:button="@null"
+        android:drawableRight="@drawable/selector_checkbox_downup"
+        android:textColor="@color/color_d2ba91"
+        android:drawablePadding="@dimen/ui_margin_20"/>
+
+</RelativeLayout>
+

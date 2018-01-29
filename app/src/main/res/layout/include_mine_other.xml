@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_150"
+        android:layout_marginBottom="@dimen/ui_margin_20"
+        android:background="@color/navigation_bar_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text_judge"
+            style="@style/mine_orderinfo"
+            android:drawableTop="@drawable/menu_message"
+            android:text="@string/will_judge"
+            />
+
+        <TextView
+            android:id="@+id/text_pay"
+            style="@style/mine_orderinfo"
+            android:drawableTop="@drawable/will_pay"
+            android:text="@string/will_pay"
+            />
+
+        <TextView
+            android:id="@+id/text_send"
+            style="@style/mine_orderinfo"
+            android:drawableTop="@drawable/will_send"
+            android:text="@string/will_send"
+            />
+
+        <TextView
+            android:id="@+id/text_get"
+            style="@style/mine_orderinfo"
+            android:drawableTop="@drawable/will_get"
+            android:text="@string/will_get"
+            />
+
+        <TextView
+            android:id="@+id/text_orderall"
+            style="@style/mine_orderinfo"
+            android:drawableTop="@drawable/order_all"
+            android:text="@string/order_all"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel_foot_data"
+        style="@style/mine_main"
+        android:layout_marginBottom="@dimen/ui_margin_20">
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/foot_type"
+            android:layout_centerVertical="true"
+            android:text="我的足型数据" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_mywallet"
+        style="@style/mine_main">
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/mine_wallet"
+            android:layout_centerVertical="true"
+            android:text="@string/my_wallet" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_info_safe"
+        style="@style/mine_main">
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/mine_safety"
+            android:layout_centerVertical="true"
+            android:text="@string/info_safe"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_manageraddress"
+        style="@style/mine_main"
+        android:layout_marginBottom="@dimen/ui_margin_20">
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/mine_address"
+            android:layout_centerVertical="true"
+            android:text="@string/manager_address" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_share"
+        style="@style/mine_main">
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/mine_share"
+            android:layout_centerVertical="true"
+            android:text="@string/share_to_friend" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_in_bintutu"
+        style="@style/mine_main">
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/mine_in_bintutu"
+            android:layout_centerVertical="true"
+            android:text="@string/in_bintutu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_setting"
+        style="@style/mine_main"
+        android:layout_marginBottom="@dimen/ui_margin_20">
+        <TextView
+            style="@style/mine_collection_count.main"
+            android:drawableLeft="@drawable/setting"
+            android:layout_centerVertical="true"
+            android:text="@string/setting" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/into" />
+    </RelativeLayout>
+</LinearLayout>

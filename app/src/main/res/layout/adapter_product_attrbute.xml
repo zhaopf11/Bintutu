@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_attr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/navigation_bar_margin"
+    android:textColor="@color/color_aaaaaa"
+    android:drawableLeft="@drawable/check_mark"
+    android:drawablePadding="@dimen/ui_11"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/font_24"
+    android:text="1213"
+    >
+
+</TextView>

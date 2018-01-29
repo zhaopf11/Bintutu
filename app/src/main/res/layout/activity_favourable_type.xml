@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/title_noright_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_submit"
+        android:layout_below="@+id/include_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/enter_mall_lin">
+
+                <TextView
+                    android:id="@+id/text_pointstr"
+                    style="@style/foot_message_detaile_text"
+                    android:layout_centerVertical="true"
+                    android:text="积分"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    android:id="@+id/text_points"
+                    style="@style/mine_collection_type"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/ui_margin_20"
+                    android:layout_marginTop="0px"
+                    android:layout_toRightOf="@+id/text_pointstr"
+                    android:text="剩余积分：" />
+
+
+                <EditText
+                    android:id="@+id/edit_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/navigation_bar_bg"
+                    android:hint="请输入使用积分数量"
+                    android:textColor="@color/gray"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/font_24" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_fulloff"
+                style="@style/enter_mall_lin">
+
+                <TextView
+                    android:id="@+id/text_fulloff"
+                    style="@style/foot_message_detaile_text"
+                    android:layout_centerVertical="true"
+                    android:text="满200减100"
+                    android:textSize="@dimen/font_30" />
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_fulloff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/ui_height_28"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_checkbox" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_favourabletype"
+                style="@style/enter_mall_lin">
+
+                <TextView
+                    android:id="@+id/text_choosecoupon"
+                    style="@style/foot_message_detaile_text"
+                    android:layout_centerVertical="true"
+                    android:text="选择优惠券"
+                    android:textSize="@dimen/font_30" />
+
+
+                <ImageView
+                    android:id="@+id/img_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down_normal" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_coupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:layout_marginRight="@dimen/navigation_bar_edit_margin">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btn_bottom"
+        android:layout_alignParentBottom="true"
+        android:text="确定" />
+</RelativeLayout>

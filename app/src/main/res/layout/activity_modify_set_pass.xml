@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_noright_common" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/lin_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_70"
+        android:background="@color/navigation_bar_bg">
+        <TextView
+            android:id="@+id/text_left"
+            style="@style/modify_progress_text"
+            android:text="1 验证手机号"
+            android:textColor="@color/gray"
+            android:background="@drawable/left_gray"/>
+
+        <TextView
+            android:id="@+id/text_rightprogress"
+            style="@style/modify_progress_text"
+            android:text="2 输入新密码"
+            android:textColor="@color/color_d2ba91"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/lin_bg" />
+
+    <EditText
+        android:id="@+id/edit_newpass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@color/navigation_bar_bg"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:textSize="@dimen/font_26"
+        android:textColor="@color/gray"
+        android:hint="新密码"
+        android:inputType="textPassword"/>
+
+
+
+    <EditText
+        android:id="@+id/edit_passsure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="2px"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:textSize="@dimen/font_26"
+        android:textColor="@color/gray"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+       />
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_88"
+        android:layout_marginTop="@dimen/ui_70"
+        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+        android:textColor="@color/navigation_bar_bg"
+        android:background="@drawable/modify_button_bg"
+        android:text="下一步"
+        android:textSize="@dimen/font_30"/>
+
+</LinearLayout>  

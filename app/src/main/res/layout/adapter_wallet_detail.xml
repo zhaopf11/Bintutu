@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation_bar_bg"
+    android:padding="@dimen/navigation_bar_edit_margin">
+
+
+    <TextView
+        android:id="@+id/text_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_d2ba91"
+        android:textSize="@dimen/font_30"
+        android:text="-125"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/text_money"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_detailtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ui_margin_20"
+            android:maxLines="1"
+            android:textSize="@dimen/font_30"
+            android:textColor="@color/gray3"
+            android:text="2017新款粗跟高跟韩版凉鞋"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/text_detaildata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/gray"
+            android:text="2017-06-22 15:04:20"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

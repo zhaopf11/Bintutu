@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50"
+        android:paddingTop="@dimen/ui_90"
+        android:paddingBottom="@dimen/margin_60"
+        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navigation_bar_bg"
+            android:maxLines="1"
+            android:textSize="@dimen/font_30"
+            android:textColor="@color/gray"
+            android:hint="请输入关联手机号"
+            android:paddingBottom="@dimen/navigation_bar_edit_margin"
+            android:inputType="phone"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray_bg" />
+
+        <RelativeLayout
+            style="@style/enter_mall_lin"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0px"
+            android:paddingRight="0px">
+
+            <EditText
+                android:id="@+id/edit_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/navigation_bar_bg"
+                android:maxLines="1"
+                android:textSize="@dimen/font_30"
+                android:textColor="@color/gray"
+                android:hint="输入验证码"
+                android:layout_toLeftOf="@+id/text_sendcode"
+                android:paddingTop="@dimen/navigation_bar_edit_margin"
+                android:paddingBottom="@dimen/navigation_bar_edit_margin"
+                android:inputType="number"/>
+            <TextView
+                android:id="@+id/text_sendcode"
+                android:layout_width="@dimen/ui_140"
+                android:layout_height="@dimen/margin_50"
+                android:background="@drawable/orange_corner_bg"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_d2ba91"
+                android:textSize="@dimen/font_24"
+                android:text="@string/send_code"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/gray_bg" />
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_88"
+            android:layout_marginTop="@dimen/margin_60"
+            android:textColor="@color/navigation_bar_bg"
+            android:background="@drawable/modify_button_bg"
+            android:text="确定"
+            android:textSize="@dimen/font_30"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhurui.bunnymall.mine.activity.MyCollectionsActivity"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+   >
+    <include layout="@layout/title_noright_common" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_collection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_70"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/ui_130"
+        android:paddingRight="@dimen/ui_130"
+        android:background="@color/navigation_bar_bg"
+        android:layout_marginTop="2px"
+        android:layout_marginBottom="@dimen/ui_margin_20">
+
+        <RadioButton
+            android:id="@+id/radio_product"
+            android:layout_width="@dimen/ui_120"
+            style="@style/home_store_radiobutton"
+            android:textColor="@drawable/radiobutton_textcolorchange_deep"
+            android:checked="true"
+            android:text="@string/collection_product" />
+
+        <RadioButton
+            android:id="@+id/radio_store"
+            android:layout_width="@dimen/ui_120"
+            style="@style/home_store_radiobutton"
+            android:textColor="@drawable/radiobutton_textcolorchange_deep"
+            android:text="@string/collection_store" />
+
+    </RadioGroup>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

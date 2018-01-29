@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical"
+    tools:context="com.zhurui.bunnymall.classify.fragment.ClassifyFragment">
+
+    <include layout="@layout/title_search_lin_common" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_classify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_170"
+        android:background="@color/gray_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/ui_40"
+       >
+
+        <RadioButton
+            android:id="@+id/radiobtn_man"
+            style="@style/classify_radiobutton"
+            />
+
+        <RadioButton
+            android:id="@+id/radiobtn_woman"
+            style="@style/classify_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_child"
+            style="@style/classify_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_sport"
+            style="@style/classify_radiobutton"
+           />
+
+        <RadioButton
+            android:id="@+id/radiobtn_design"
+            style="@style/classify_radiobutton"
+            android:drawableBottom="@drawable/gray_corner_bg"/>
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/grid_classify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_20"
+        android:horizontalSpacing="@dimen/navigation_bar_margin"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/ui_margin_20" />
+
+
+</LinearLayout>

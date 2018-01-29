@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_productname"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ui_70"
+    android:background="@color/gray_bg"
+    android:textSize="@dimen/font_24"
+    android:textColor="@color/gray"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/ui_margin_20"
+    android:text="高跟鞋">
+
+</TextView>

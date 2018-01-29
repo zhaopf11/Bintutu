@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/ui_30"
+    android:background="@color/navigation_bar_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="@dimen/ui_290"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/mune_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlt_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ui_90"
+            android:paddingLeft="10dp"
+             >
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:src="@drawable/cart"
+                />
+
+            <TextView
+                android:id="@+id/tv_set_gesture_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_100"
+                android:gravity="center_vertical"
+                android:text="购物袋"
+                android:layout_toRightOf="@+id/cart"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:textSize="@dimen/font_30"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:background="#dddfe4" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_store"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ui_90"
+            android:paddingLeft="10dp"
+             >
+
+            <ImageView
+                android:id="@+id/menu_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:src="@drawable/bin_store"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_100"
+                android:gravity="center_vertical"
+                android:text="店铺"
+                android:layout_toRightOf="@+id/menu_store"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:textSize="@dimen/font_30"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:background="#dddfe4" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ui_90"
+            android:paddingLeft="10dp"
+            >
+
+            <CheckBox
+                android:id="@+id/menu_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/message"
+                android:button="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:gravity="center" />
+            <!---->
+            <!--<ImageView-->
+                <!--android:id="@+id/menu_collection"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/navigation_bar_edit_margin"-->
+                <!--android:src="@drawable/menu_collection"-->
+                <!--/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_100"
+                android:gravity="center_vertical"
+                android:text="消息"
+                android:layout_toRightOf="@+id/menu_collection"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:textSize="@dimen/font_30"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/ui_90"
+            android:background="#dddfe4" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ui_90"
+            android:paddingLeft="10dp"
+             >
+            <ImageView
+                android:id="@+id/menu_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:src="@drawable/menu_share"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="分享"
+                android:layout_toRightOf="@+id/menu_share"
+                android:layout_marginLeft="@dimen/margin_50"
+                android:textSize="@dimen/font_30"
+                android:textColor="#333333" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

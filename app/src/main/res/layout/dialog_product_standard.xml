@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CustomDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/ui_200"
+        android:background="@color/navigation_bar_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/navigation_bar_edit_margin"
+            android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_product"
+                android:layout_width="@dimen/ui_230"
+                android:layout_height="@dimen/ui_230" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                android:layout_marginTop="@dimen/ui_110"
+                android:orientation="vertical">
+
+                <include layout="@layout/price_common" />
+
+                <TextView
+                    android:id="@+id/text_sizecolor"
+                    style="@style/adapter_order"
+                    android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+                    android:text="请选择  颜色分类  尺码" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_img_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="@dimen/navigation_bar_edit_margin"
+                android:paddingTop="@dimen/navigation_bar_edit_margin">
+
+                <ImageView
+                    android:id="@+id/img_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/close" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_submit"
+            android:layout_below="@+id/ll_liner"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_foottype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ui_40"
+                        android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                        android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+                        <TextView
+                            style="@style/adapter_order"
+                            android:layout_centerVertical="true"
+                            android:text="选择足型数据" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_choose"
+                            style="@style/adapter_order"
+                            android:padding="@dimen/ui_margin_20"
+                            android:layout_alignParentRight="true"
+                            android:button="@null"
+                            android:drawablePadding="@dimen/ui_margin_20"
+                            android:drawableRight="@drawable/selector_checkbox_downup"
+                            android:text=""
+                            android:textColor="@color/color_d2ba91" />
+
+                    </RelativeLayout>
+
+
+                    <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+                        android:id="@+id/flowRaidogroupfoot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                        android:layout_marginRight="@dimen/navigation_bar_edit_margin"
+                        android:layout_marginTop="@dimen/navigation_bar_margin">
+
+
+                    </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/adapter_order"
+                    android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginTop="@dimen/margin_60"
+                    android:text="颜色分类" />
+
+                <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+                    android:id="@+id/flowRadioGroupColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginRight="@dimen/navigation_bar_edit_margin">
+
+                </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+
+                <TextView
+                    style="@style/adapter_order"
+                    android:layout_marginBottom="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginTop="@dimen/margin_60"
+                    android:text="尺码" />
+
+                <com.zhurui.bunnymall.viewutils.FlowRadioGroup
+                    android:id="@+id/flowRadioGroupSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/navigation_bar_edit_margin"
+                    android:layout_marginRight="@dimen/navigation_bar_edit_margin">
+
+                </com.zhurui.bunnymall.viewutils.FlowRadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_60"
+                    android:layout_marginTop="@dimen/margin_60"
+                    android:paddingLeft="@dimen/navigation_bar_edit_margin"
+                    android:paddingRight="@dimen/navigation_bar_edit_margin">
+
+                    <TextView
+                        style="@style/adapter_order"
+                        android:layout_centerVertical="true"
+                        android:text="数量" />
+
+                    <com.zhurui.bunnymall.viewutils.AmountView
+                        android:id="@+id/amountView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                    </com.zhurui.bunnymall.viewutils.AmountView>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_88"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/navigation_bar_edit_margin"
+            android:background="@color/color_d2ba91"
+            android:text="确定"
+            android:textColor="@color/navigation_bar_bg"
+            android:textSize="@dimen/font_30" />
+    </RelativeLayout>
+</RelativeLayout>

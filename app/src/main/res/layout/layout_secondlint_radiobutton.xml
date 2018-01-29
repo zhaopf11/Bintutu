@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhurui.bunnymall.viewutils.SecondLineRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:button="@null"
+    app:first_text="6月27日"
+    app:second_text="已结束"
+    app:first_size="@dimen/font_26"
+    app:second_size="@dimen/font_24"
+    app:text_color="@color/gray"
+    app:select_text_color="@color/navigation_bar_bg"
+    android:background="@drawable/radiobutton_bg_secondline">
+
+</com.zhurui.bunnymall.viewutils.SecondLineRadioButton>
